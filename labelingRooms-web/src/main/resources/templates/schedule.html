@@ -115,18 +115,19 @@ test opis
 <div class="sqr">
     <!--Days label-->
     <div class="dayLabel" ng-repeat="name in day.names" ng-style="day.getStyle($index)"
-         ng-init="eventFilter.dayName=name">
+         ng-init="eventFilter.weekDayIndex=$index">
         <div style="height: 10%">
             <label>{{name}}</label>
         </div>
         <div class="hourDiv" ng-repeat="i in day.hours.getQuantityArray() track by $index"
              ng-style="day.hours.getStyle($index)">
         </div>
-        <div class="event" ng-repeat="event in events| filter:eventFilter" ng-style="eventUtils.getStyle(4, 30, 2, 30)">
+        <div class="event" ng-repeat="event in events| filter:eventFilter"
+             ng-style="eventUtils.getStyle(event.startHour, event.startMinute, event.duration)">
             <!--<img src="http://downloadicons.net/sites/default/files/laboratory-icon-46113.png" style="height: 20%; width: 20%;"/>-->
             <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/2248-200.png" style="height: 20%; width: 20%;"/>
 
-            <h3 style="display: inline">remat</h3>
+            <h3 style="display: inline">{{event.title}}</h3>
             <label> elo spoko opis opis nasz opis elo spoko opis opis nasz opis elo spoko opis opis nasz opis elo spoko
                 tescik gas
                 opis

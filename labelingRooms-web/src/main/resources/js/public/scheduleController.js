@@ -5,7 +5,12 @@ var scheduleModule = angular.module(
     'scheduleModule', []);
 
 scheduleModule.controller('scheduleController', ['$scope', 'IndexService', function ($scope, IndexService) {
-    IndexService.getEvents({id: 1});
+
+    $scope.events= [];
+    IndexService.getEvents({id: 1},function (events) {
+        $scope.events=events;
+    });
+
     $scope.hourColumn = {
         width: 10,
         startHour: 8,
@@ -61,13 +66,19 @@ scheduleModule.controller('scheduleController', ['$scope', 'IndexService', funct
     };
 
     $scope.eventUtils = {
-        getStyle: function (startHour, startMinute, endHour, endMinute) {
+        getStyle: function (startHour, startMinute, duration) {
             $scope.tempStyle = {};
             $scope.tempStyle.width = "100%";
-            var startTimeDecimal = (startHour + startMinute / 60);
-            var endTimeDecimal = (endHour + endMinute / 60);
+            var startTimeDecimal = ( startHour -$scope.hourColumn.startHour + startMinute / 60);
+            var durationDecimal=0;
+            while(duration>60){
+                duration=duration-60;
+                durationDecimal++;
+            }
+            durationDecimal+=duration/60;
+
             $scope.tempStyle.top = (startTimeDecimal / $scope.hourColumn.getSize()) * (100 - $scope.day.height) + $scope.day.height + "%";
-            $scope.tempStyle.height = (100 - $scope.day.height) / ($scope.hourColumn.getSize() * (endTimeDecimal - startTimeDecimal)) + "%";
+            $scope.tempStyle.height = ((100 - $scope.day.height) / $scope.hourColumn.getSize())* durationDecimal + "%";
             return $scope.tempStyle;
         }
     };
@@ -102,7 +113,8 @@ scheduleModule.controller('scheduleController', ['$scope', 'IndexService', funct
     }
     $scope.style.top = "10%";
 
-    $scope.events = [{dayName: "poniedziałek"}, {dayName: "wtorek"}, {dayName: "czwartek"}];
+
+    // $scope.events = [{dayName: "poniedziałek"}, {dayName: "wtorek"}, {dayName: "czwartek"}];
 
     $
 

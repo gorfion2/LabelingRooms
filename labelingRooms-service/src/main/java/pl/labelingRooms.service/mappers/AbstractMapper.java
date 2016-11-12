@@ -12,11 +12,11 @@ public abstract class AbstractMapper<DBO,DTO> {
 
     public abstract DTO convertToDTO(DBO dbo);
 
-    public Iterable<DBO> convertToDBO(List<DTO> dtos){
+    public List<DBO> convertToDBO(List<DTO> dtos){
         return dtos.stream().map(this::convertToDBO).collect(Collectors.toList());
     }
 
-    public Iterable<DTO> convertToDTO(List<DBO> dbos){
+    public List<DTO> convertToDTO(List<DBO> dbos){
         return dbos.stream().map(this::convertToDTO).collect(Collectors.toList());
     }
 

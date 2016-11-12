@@ -42,7 +42,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http.authorizeRequests().antMatchers("/**")
+        http.authorizeRequests().antMatchers("/editor/**")
                 .access("hasRole('ROLE_ADMIN')").and().formLogin().and().csrf().disable();
     }
 

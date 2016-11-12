@@ -9,7 +9,7 @@ import pl.labelingRooms.model.dto.TeacherDto;
  */
 @Component
 public class TeacherMapper extends AbstractMapper<Teacher,TeacherDto> {
-    
+
     @Override
     public Teacher convertToDBO(TeacherDto teacherDto) {
         Teacher teacher = new Teacher();

@@ -18,7 +18,14 @@ public class EventMapper extends AbstractMapper<Event,EventDto> {
 
     @Override
     public EventDto convertToDTO(Event event) {
+        if(event==null)
+            return null;
         EventDto eventDto = new EventDto();
+        eventDto.setDuration(event.getDuration());
+        eventDto.setStartHour(event.getStartHour());
+        eventDto.setStartMinute(event.getStartMinute());
+        eventDto.setTitle(event.getTitle());
+        eventDto.setWeekDayIndex(event.getWeekDay().getIndex());
         return eventDto;
     }
 }
