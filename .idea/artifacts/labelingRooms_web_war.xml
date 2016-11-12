@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="labelingRooms-web:war">
+    <output-path>$PROJECT_DIR$/labelingRooms-web/target</output-path>
+    <root id="archive" name="labelingRooms-web-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="labelingRooms-web:war exploded" />
+    </root>
+  </artifact>
+</component>
