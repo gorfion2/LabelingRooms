@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <script src="/js/bower_components/angular/angular.min.js"></script>
+    <script src="/js/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="/js/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/js/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/js/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+
+    <script src="/js/public/routeProvider.js"></script>
+    <script src="/js/public/scheduleController.js"></script>
+    <script src="/js/public/scheduleService.js"></script>
+</head>
+<style>
+
+    .navbar-inverse {
+        border-radius: 0;
+    }
+
+    .navbar-inverse {
+        background-color: rgba(0, 0, 0, 0.4);
+        border-color: transparent;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 12px;
+        font-weight: 800;
+        padding: 5px 0px;
+        letter-spacing: 2px;
+        margin: 10px 20px 10px 20px;
+        color: #FFF;
+    }
+
+    #bg {
+        border-style: solid;
+        border-width: 1px;
+        position: fixed;
+        background-image: url("/js/public/aei.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+<div id="bg">
+
+    <div ng-app="mainApp">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <p><a href="#index">Index</a></p>
+        <div ng-view="true"></div>
+
+
+    </div>
+
+</div>
+</body>
+</html>

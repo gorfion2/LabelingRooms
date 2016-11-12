@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/labelingRooms.iml" filepath="$PROJECT_DIR$/labelingRooms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labelingRooms-model/labelingRooms-model.iml" filepath="$PROJECT_DIR$/labelingRooms-model/labelingRooms-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labelingRooms-repository/labelingRooms-repository.iml" filepath="$PROJECT_DIR$/labelingRooms-repository/labelingRooms-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labelingRooms-service/labelingRooms-service.iml" filepath="$PROJECT_DIR$/labelingRooms-service/labelingRooms-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labelingRooms-web/labelingRooms-web.iml" filepath="$PROJECT_DIR$/labelingRooms-web/labelingRooms-web.iml" />
+    </modules>
+  </component>
+</project>
