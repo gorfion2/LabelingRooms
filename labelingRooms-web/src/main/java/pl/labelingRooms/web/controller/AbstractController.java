@@ -23,28 +23,28 @@ abstract public class AbstractController<DBO, DTO, S extends AbstractService<DBO
         return service.findOne(new Long(id));
     }
 
-    @RequestMapping("/all")
-    public Iterable<DTO> findAll() {
-        return service.findAll();
-    }
+//    @RequestMapping("/all")
+//    public Iterable<DTO> findAll() {
+//        return service.findAll();
+//    }
 
     @RequestMapping(value = "/save/{id}", method = RequestMethod.POST)
     public void save(@RequestBody DTO modelToSave, @PathVariable int id) {
         service.save(modelToSave);
     }
 
-    @RequestMapping(value = "/save/all", method = RequestMethod.POST)
-    public void save(@RequestBody Iterable<DTO> modelsToSave) {
-        service.save(modelsToSave);
-    }
+//    @RequestMapping(value = "/save/all", method = RequestMethod.POST)
+//    public void save(@RequestBody Iterable<DTO> modelsToSave) {
+//        service.save(modelsToSave);
+//    }
 
-    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
     public void delete(@RequestBody DTO modelToDelete, @PathVariable int id) {
         service.delete(modelToDelete);
     }
 
-    @RequestMapping(value = "/delete/all", method = RequestMethod.DELETE)
-    public void delete(@RequestBody Iterable<DTO> modelsToDelete) {
-        service.delete(modelsToDelete);
-    }
+//    @RequestMapping(value = "/delete/all", method = RequestMethod.DELETE)
+//    public void delete(@RequestBody Iterable<DTO> modelsToDelete) {
+//        service.delete(modelsToDelete);
+//    }
 }

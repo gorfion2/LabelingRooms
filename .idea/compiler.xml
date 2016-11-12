@@ -29,11 +29,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="labelingRooms" target="1.8" />
-      <module name="labelingRooms-model" target="1.8" />
-      <module name="labelingRooms-repository" target="1.8" />
+      <module name="labelingRooms" target="1.5" />
+      <module name="labelingRooms-model" target="1.5" />
+      <module name="labelingRooms-repository" target="1.5" />
       <module name="labelingRooms-service" target="1.8" />
-      <module name="labelingRooms-web" target="1.8" />
+      <module name="labelingRooms-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

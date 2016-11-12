@@ -3,6 +3,7 @@ package pl.labelingRooms.web.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.labelingRooms.model.dbo.Event;
+import pl.labelingRooms.model.dto.EventDto;
 import pl.labelingRooms.service.EventService;
 
 /**
@@ -10,5 +11,5 @@ import pl.labelingRooms.service.EventService;
  */
 @RestController
 @RequestMapping("/event")
-public class EventController extends AbstractController<Event,Event,EventService> {
+public class EventController extends AbstractController<Event,EventDto,EventService> {
 }

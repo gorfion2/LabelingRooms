@@ -3,6 +3,7 @@ package pl.labelingRooms.model.dbo;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
  * Created by Kamil on 2016-10-26.
@@ -16,6 +17,16 @@ public class Event {
     private int startHour;
     private int startMinute;
     private int duration;
+    @ManyToOne
+    private Room room;
+
+    public Room getRoom() {
+        return room;
+    }
+
+    public void setRoom(Room room) {
+        this.room = room;
+    }
 
     public long getId() {
         return id;
