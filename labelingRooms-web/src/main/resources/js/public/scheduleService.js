@@ -10,7 +10,7 @@ scheduleServicesModule.factory('IndexService', [
             getEvents: {
                 params: {id: "@id"},
                 method: 'GET',
-                url: '../room/:id/events',
+                url: '../../room/:id/events',
                 isArray: true
             },
             getUser: {

@@ -22,6 +22,10 @@ abstract public class AbstractService<DBO, DTO, R extends CrudRepository<DBO, Lo
         return mapper.convertToDTO(repo.findOne(id));
     }
 
+    public DBO findOneDBO(Long id) {
+        return repo.findOne(id);
+    }
+
     public List<DTO> findAll() {
         return mapper.convertToDTO((List<DBO>) repo.findAll());
     }
