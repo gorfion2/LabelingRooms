@@ -26,7 +26,7 @@ angular.module('myApp', [require('angular-route')]);
 bower install angular-route
 ```
 
-Add a `<script>` to your `index.html`:
+Add a `<script>` to your `name.html`:
 
 ```html
 <script src="/bower_components/angular-route/angular-route.js"></script>

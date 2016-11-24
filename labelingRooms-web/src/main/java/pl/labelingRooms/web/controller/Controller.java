@@ -17,7 +17,7 @@ public class Controller {
         return new ModelAndView("index");
     }
 
-    @RequestMapping("/schedule/room/{roomId}")
+    @RequestMapping("/plan/{roomId}")
     public ModelAndView schedule() {
         return new ModelAndView("schedule");
     }

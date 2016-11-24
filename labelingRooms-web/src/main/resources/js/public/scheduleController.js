@@ -2,7 +2,7 @@
  * Created by Kamil on 2016-10-26.
  */
 var scheduleModule = angular.module(
-    'scheduleModule', ['ngRoute', 'scheduleModule', 'eventsServicesModule']);
+    'scheduleModule', ['ngRoute', 'scheduleModule', 'editEventServicesModule']);
 
 scheduleModule.controller('scheduleController', ['$scope', '$interval', '$location', 'IndexService',
     function ($scope, $interval, $location, IndexService) {
@@ -59,10 +59,15 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
         };
 
         $scope.eventUtils = {
-            getStyle: function (startHour, startMinute, duration) {
+            getStyle: function (startHour, startMinute, endHour, endMinute) {
                 $scope.tempStyle = {};
                 $scope.tempStyle.width = "100%";
                 var startTimeDecimal = ( startHour - $scope.hourColumn.startHour + startMinute / 60);
+                if (startMinute > endMinute) {
+                    endMinute += 60;
+                    endHour--;
+                }
+                var duration = endMinute - startMinute + (endHour - startHour) * 60;
                 var durationDecimal = 0;
                 while (duration > 60) {
                     duration = duration - 60;
@@ -82,7 +87,7 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
             IndexService.getEvents({id: 1}, function (events) {
                 $scope.events = events;
                 $scope.events.forEach(function (event) {
-                    event.style = $scope.eventUtils.getStyle(event.startHour, event.startMinute, event.duration);
+                    event.style = $scope.eventUtils.getStyle(event.startHour, event.startMinute, event.endHour, event.endMinute);
                 })
             });
         };

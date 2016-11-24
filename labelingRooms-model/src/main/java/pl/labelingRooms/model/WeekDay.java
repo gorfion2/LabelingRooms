@@ -4,26 +4,26 @@ package pl.labelingRooms.model;
  * Created by Kamil on 2016-11-12.
  */
 public enum WeekDay {
-    MONDAY(0), TUESDAY(1), WEDNESDAY(2), THURSDAY(3), FRIDAY(4),
-    SATURDAY(5), SUNDAY(6);
+    MONDAY("Poniedziałek"), TUESDAY("Wtorek"), WEDNESDAY("Środa"), THURSDAY("Czwartek"), FRIDAY("Piątek"),
+    SATURDAY("Sobota"), SUNDAY("Niedziala");
 
-    WeekDay(int index) {
-        this.index = index;
+    private String name;
+
+    private WeekDay(String name){
+        this.name=name;
     }
 
-    public int index;
-
-    public int getIndex() {
-        return index;
+    public String getName() {
+        return name;
     }
 
-    public void setIndex(int index) {
-        this.index = index;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public static WeekDay getValue(int index) {
+    public static WeekDay getValue(String name) {
         for (WeekDay weekDay : WeekDay.values()) {
-            if (weekDay.getIndex() == index)
+            if (weekDay.getName() == name)
                 return weekDay;
         }
         return null;

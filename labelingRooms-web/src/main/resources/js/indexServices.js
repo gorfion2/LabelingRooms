@@ -1,5 +1,5 @@
 var IndexServices = angular.module(
-    "eventsServicesModule", ['ngResource']);
+    "editEventServicesModule", ['ngResource']);
 
 IndexServices.factory('IndexService', [
     '$resource', function ($resource) {

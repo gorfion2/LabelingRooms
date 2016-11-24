@@ -89,13 +89,13 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('.addButton').on('click', function() {
-            var index = $(this).data('index');
-            if (!index) {
-                index = 1;
-                $(this).data('index', 1);
+            var name = $(this).data('name');
+            if (!name) {
+                name = 1;
+                $(this).data('name', 1);
             }
-            index++;
-            $(this).data('index', index);
+            name++;
+            $(this).data('name', name);
 
             var template     = $(this).attr('data-template'),
                 $templateEle = $('#' + template + 'Template'),
@@ -105,10 +105,10 @@
 
             // Set random value for checkbox and textbox
             if ('checkbox' == $el.attr('type') || 'radio' == $el.attr('type')) {
-                $el.val('Choice #' + index)
-                   .parent().find('span.lbl').html('Choice #' + index);
+                $el.val('Choice #' + name)
+                   .parent().find('span.lbl').html('Choice #' + name);
             } else {
-                $el.attr('placeholder', 'Textbox #' + index);
+                $el.attr('placeholder', 'Textbox #' + name);
             }
 
             $row.on('click', '.removeButton', function(e) {

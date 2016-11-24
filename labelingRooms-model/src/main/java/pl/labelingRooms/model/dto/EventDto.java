@@ -6,10 +6,12 @@ package pl.labelingRooms.model.dto;
 public class EventDto {
 
     private String title;
-    private int weekDayIndex;
+    private String weekDay;
+    private String week;
     private int startHour;
     private int startMinute;
-    private int duration;
+    private int endHour;
+    private int endMinute;
     private int roomId;
 
     public String getTitle() {
@@ -20,12 +22,20 @@ public class EventDto {
         this.title = title;
     }
 
-    public int getWeekDayIndex() {
-        return weekDayIndex;
+    public String getWeekDay() {
+        return weekDay;
     }
 
-    public void setWeekDayIndex(int weekDayIndex) {
-        this.weekDayIndex = weekDayIndex;
+    public void setWeekDay(String weekDay) {
+        this.weekDay = weekDay;
+    }
+
+    public String getWeek() {
+        return week;
+    }
+
+    public void setWeek(String week) {
+        this.week = week;
     }
 
     public int getStartHour() {
@@ -44,12 +54,20 @@ public class EventDto {
         this.startMinute = startMinute;
     }
 
-    public int getDuration() {
-        return duration;
+    public int getEndHour() {
+        return endHour;
     }
 
-    public void setDuration(int duration) {
-        this.duration = duration;
+    public void setEndHour(int endHour) {
+        this.endHour = endHour;
+    }
+
+    public int getEndMinute() {
+        return endMinute;
+    }
+
+    public void setEndMinute(int endMinute) {
+        this.endMinute = endMinute;
     }
 
     public int getRoomId() {

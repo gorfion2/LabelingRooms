@@ -2,36 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34ae4e93-6e5d-486d-b754-c0109b265df0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/DataWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/InvalidDataException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/AbstractValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/EventValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editEventControllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/routeProvider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/events.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/routeProvider.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mappers/AbstractMapper.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/AbstractMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mappers/EventMapper.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mappers/RoomMapper.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/RoomMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mappers/TeacherMapper.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/TeacherMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editEventServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/WeekDay.java" afterPath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/WeekDay.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java" afterPath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/AbstractService.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/AbstractService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/EventService.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/EventService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/TeacherService.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/TeacherService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/AbstractController.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/AbstractController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/EventController.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/EventController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-animate/README.md" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-animate/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-resource/README.md" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-resource/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-route/README.md" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-route/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-ui-grid/README.md" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-ui-grid/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-ui-grid/less/cellnav/less/cellNav.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-ui-grid/less/cellnav/less/cellNav.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-ui-grid/less/footer.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-ui-grid/less/footer.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-ui-grid/less/menu.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-ui-grid/less/menu.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-ui-grid/less/rtl.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular-ui-grid/less/rtl.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular/README.md" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/angular/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap-formhelpers/less/bootstrap-formhelpers-colorpicker.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap-formhelpers/less/bootstrap-formhelpers-colorpicker.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap-formhelpers/less/bootstrap-formhelpers-datepicker.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap-formhelpers/less/bootstrap-formhelpers-datepicker.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap-formhelpers/less/bootstrap-formhelpers-selectbox.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap-formhelpers/less/bootstrap-formhelpers-selectbox.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap-formhelpers/less/bootstrap-formhelpers-timepicker.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap-formhelpers/less/bootstrap-formhelpers-timepicker.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/javascript.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/javascript.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/button-groups.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/button-groups.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/carousel.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/carousel.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/dropdowns.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/dropdowns.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/input-groups.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/input-groups.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/list-group.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/list-group.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/modals.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/modals.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/navbar.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/navbar.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/pagination.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/pagination.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/popovers.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/popovers.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/tooltip.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/tooltip.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/variables.less" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/bootstrap/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/form.validation/demo/dynamic.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/form.validation/demo/dynamic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/form.validation/demo/typehead.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/bower_components/form.validation/demo/typehead.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editEventControllers.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editEventControllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsController.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsService.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/routeProvider.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/routeProvider.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/indexServices.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/indexServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleService.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/routeProvider.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/routeProvider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/events.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/events.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html" />
     </list>
     <ignored path="labelingRooms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,11 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="editEventControllers.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="editEventControllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editEventControllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+            <state relative-caret-position="405">
+              <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
               <folding>
                 <element signature="e#43#85#0" expanded="false" />
               </folding>
@@ -86,19 +101,57 @@
       <file leaf-file-name="editEvent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="353">
+              <caret line="28" column="82" selection-start-line="28" selection-start-column="82" selection-end-line="28" selection-end-column="82" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="323">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scheduleController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="89" column="127" selection-start-line="89" selection-start-column="127" selection-end-line="89" selection-end-column="127" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="39" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schedule.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="95" column="59" selection-start-line="95" selection-start-column="59" selection-end-line="95" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/MyUserDetailsService.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/GreetingController.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/GreetingControllerTest.groovy" />
         <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mappers/GreetingMapper.java" />
@@ -155,29 +207,30 @@
         <option value="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/EventRepository.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/RoomController.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleService.js" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html" />
         <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/DataWrapper.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/EventController.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java" />
         <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mappers/EventMapper.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/events.html" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsService.js" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsController.js" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/routeProvider.js" />
         <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/InvalidDataException.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/AbstractController.java" />
         <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/EventValidator.java" />
         <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/AbstractValidator.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/WeekDay.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java" />
         <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/EventService.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsService.js" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editEventServices.js" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/routeProvider.js" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html" />
+        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/WeekDay.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/events.html" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsController.js" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editEventControllers.js" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html" />
       </list>
     </option>
   </component>
@@ -267,6 +320,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pl.labelingRooms.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labelingRooms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labelingRooms-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pl.labelingRooms.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labelingRooms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labelingRooms-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
@@ -295,24 +380,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="labelingRooms-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="editor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labelingRooms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="labelingRooms-service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
@@ -345,7 +412,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="validator" />
+              <option name="myItemId" value="mapper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,30 +420,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="labelingRooms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labelingRooms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labelingRooms-model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labelingRooms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labelingRooms-model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pl.labelingRooms.model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -397,20 +440,21 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="edit&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/editEventControllers.js&#10;events&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/events.html&#10;edite&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/editEventControllers.js" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="pl.labelingRooms.web.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Kamil\Desktop\Labeling Rooms\LabelingRooms\labelingRooms-web\src\main\resources\js\editor" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kamil\Desktop\Template\labelingRooms-web\src\main\resources\templates" />
+      <recent name="C:\Users\Kamil\Desktop\Template\labelingRooms-web\src\main\resources\js" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Kamil\Desktop\Template\labelingRooms-web\src\main\resources\templates" />
-      <recent name="C:\Users\Kamil\Desktop\Template\labelingRooms-web\src\main\resources\js" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kamil\Desktop\Labeling Rooms\LabelingRooms\labelingRooms-web\src\main\resources\js\editor" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1024,50 +1068,50 @@
       <workItem from="1479643463076" duration="1546000" />
       <workItem from="1479751830152" duration="6096000" />
       <workItem from="1479841698749" duration="12671000" />
-      <workItem from="1480011213730" duration="45000" />
+      <workItem from="1480011213730" duration="6646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52146000" />
+    <option name="totallyTimeSpent" value="58747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35962147" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2203514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30914825" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22986823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35962147" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4022082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4022082" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1083,7 +1127,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1092,13 +1136,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/RoomDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/TeacherDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1218,13 +1255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1234,13 +1264,6 @@
             <element signature="e#884#885#0" expanded="false" />
             <element signature="e#946#947#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1279,38 +1302,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="97" column="81" selection-start-line="97" selection-start-column="61" selection-end-line="97" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/EventController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/indexServices.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1370,13 +1366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/WeekDay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/EventValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1384,17 +1373,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Event.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1402,35 +1385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="19" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/routeProvider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="96" selection-start-line="3" selection-start-column="96" selection-end-line="3" selection-end-column="96" />
           <folding />
         </state>
       </provider>
@@ -1439,23 +1393,181 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html">
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="17">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/routeProvider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="135" selection-start-line="3" selection-start-column="135" selection-end-line="3" selection-end-column="135" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editEventServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+            <element signature="e#450#451#0" expanded="false" />
+            <element signature="e#484#485#0" expanded="false" />
+            <element signature="e#514#515#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+            <element signature="e#598#599#0" expanded="false" />
+            <element signature="e#629#630#0" expanded="false" />
+            <element signature="e#656#657#0" expanded="false" />
+            <element signature="e#696#697#0" expanded="false" />
+            <element signature="e#728#729#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
+            <element signature="e#793#794#0" expanded="false" />
+            <element signature="e#840#841#0" expanded="false" />
+            <element signature="e#882#883#0" expanded="false" />
+            <element signature="e#917#918#0" expanded="false" />
+            <element signature="e#951#952#0" expanded="false" />
+            <element signature="e#1002#1003#0" expanded="false" />
+            <element signature="e#1048#1049#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
+            <element signature="e#1109#1110#0" expanded="false" />
+            <element signature="e#1152#1153#0" expanded="false" />
+            <element signature="e#1190#1191#0" expanded="false" />
+            <element signature="e#1223#1224#0" expanded="false" />
+            <element signature="e#1255#1256#0" expanded="false" />
+            <element signature="e#1302#1303#0" expanded="false" />
+            <element signature="e#1344#1345#0" expanded="false" />
+            <element signature="e#1374#1375#0" expanded="false" />
+            <element signature="e#1403#1404#0" expanded="false" />
+            <element signature="e#1444#1445#0" expanded="false" />
+            <element signature="e#1480#1481#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/WeekDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#370#371#0" expanded="false" />
+            <element signature="e#397#398#0" expanded="false" />
+            <element signature="e#437#438#0" expanded="false" />
+            <element signature="e#469#470#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/EventController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/eventsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editEventControllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+        <state relative-caret-position="405">
+          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
           <folding>
             <element signature="e#43#85#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="28" column="82" selection-start-line="28" selection-start-column="82" selection-end-line="28" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="39" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="89" column="127" selection-start-line="89" selection-start-column="127" selection-end-line="89" selection-end-column="127" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="95" column="59" selection-start-line="95" selection-start-column="59" selection-end-line="95" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

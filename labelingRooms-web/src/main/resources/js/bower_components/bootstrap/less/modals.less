@@ -30,7 +30,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: @zindex-modal-background;
+  z-name: @zindex-modal-background;
 
   // When fading in the modal, animate it to slide down
   &.fade .modal-dialog {
@@ -46,7 +46,7 @@
   margin-right: auto;
   width: auto;
   padding: 10px;
-  z-index: (@zindex-modal-background + 10);
+  z-name: (@zindex-modal-background + 10);
 }
 
 // Actual modal
@@ -69,7 +69,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: (@zindex-modal-background - 10);
+  z-name: (@zindex-modal-background - 10);
   background-color: @modal-backdrop-bg;
   // Fade for backdrop
   &.fade { .opacity(0); }

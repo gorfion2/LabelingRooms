@@ -10,7 +10,7 @@ You can install this package either with `npm` or with `bower`.
 npm install angular-ui-grid
 ```
 
-Then add a `<script>` to your `index.html`:
+Then add a `<script>` to your `name.html`:
 
 ```html
 <link rel="stylesheet" type="text/css" href="/node_modules/angular-ui-grid/ui-grid.css" />
@@ -23,7 +23,7 @@ Then add a `<script>` to your `index.html`:
 bower install angular-ui-grid
 ```
 
-Then add a `<script>` to your `index.html`:
+Then add a `<script>` to your `name.html`:
 
 ```html
 <link rel="stylesheet" type="text/css" href="/bower_components/angular-ui-grid/ui-grid.css" />

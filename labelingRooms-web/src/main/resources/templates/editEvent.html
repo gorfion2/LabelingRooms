@@ -1,39 +1,38 @@
 <div class="container">
-    {{eventForm.title.$valid}}
     {{event}}
     <form class="form-horizontal" name="eventForm">
         <div ng-class="eventForm.title.$valid ?  'form-group has-success has-feedback': 'form-group has-error has-feedback'">
-            <label class="control-label col-sm-2" for="title">Opis:</label>
-            <div class="col-sm-4">
+            <label class="control-label col-sm-3" for="title">Opis:</label>
+            <div class="col-sm-5">
                 <input name="title" ng-model="event.title" type="text" class="form-control" id="title"
                        placeholder="np. PUM GKIO2" required>
             </div>
         </div>
         <div ng-class="eventForm.roomId.$valid ?  'form-group has-success has-feedback': 'form-group has-error has-feedback'">
-            <label class="control-label col-sm-2" for="room">Sala:</label>
-            <div class="col-sm-4">
+            <label class="control-label col-sm-3" for="room">Sala:</label>
+            <div class="col-sm-5">
                 <input ng-pattern="roomRegex" name="roomId" ng-model="event.roomId" type="text" class="form-control"
                        id="room"
                        placeholder="np. 903" required>
             </div>
         </div>
         <div ng-class="eventForm.startTime.$valid && validStartTime?  'form-group has-success has-feedback': 'form-group has-error has-feedback'">
-            <label class="control-label col-sm-2" for="startTime">Godzina rozpoczęcia:</label>
-            <div class="col-sm-4">
-                <input ng-pattern="timeRegex" ng-change="setEventStartTime(startTime)" ng-model="startTime" type="text"
+            <label class="control-label col-sm-3" for="startTime">Godzina rozpoczęcia:</label>
+            <div class="col-sm-5">
+                <input ng-pattern="timeRegex" ng-change="setEventStartTime(event.start)" ng-model="event.start" type="text"
                        class="form-control" id="startTime" placeholder="np. 12:30" name="startTime" required>
             </div>
         </div>
         <div ng-class="eventForm.endTime.$valid && validEndTime?  'form-group has-success has-feedback': 'form-group has-error has-feedback'">
-            <label class="control-label col-sm-2" for="endTime">Godzina zakończenia:</label>
-            <div class="col-sm-4">
-                <input ng-pattern="timeRegex" ng-change="setEventEndTime(endTime)" ng-model="endTime" type="text"
+            <label class="control-label col-sm-3" for="endTime">Godzina zakończenia:</label>
+            <div class="col-sm-5">
+                <input ng-pattern="timeRegex" ng-change="setEventEndTime(event.end)" ng-model="event.end" type="text"
                        class="form-control" id="endTime" placeholder="np. 14:00" name="endTime" required>
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-sm-2" for="week">Tydzień:</label>
-            <div class="col-sm-4">
+            <label class="control-label col-sm-3" for="week">Tydzień:</label>
+            <div class="col-sm-5">
                 <select ng-model="event.week" class="form-control" id="week">
                     <option>Każdy</option>
                     <option>Parzysty</option>
@@ -42,8 +41,8 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-sm-2" for="weekDay">Dzień tygodnia:</label>
-            <div class="col-sm-4">
+            <label class="control-label col-sm-3" for="weekDay">Dzień tygodnia:</label>
+            <div class="col-sm-5">
                 <select ng-model="event.weekDay" class="form-control" id="weekDay">
                     <option>Poniedziałek</option>
                     <option>Wtorek</option>
@@ -57,7 +56,10 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button ng-disabled="!(eventForm.title.$valid && eventForm.roomId.$valid && eventForm.startTime.$valid && validStartTime && eventForm.endTime.$valid && validEndTime)"
+
+                        type="submit" class="btn btn-default">Edytuj
+                </button>
             </div>
         </div>
     </form>
