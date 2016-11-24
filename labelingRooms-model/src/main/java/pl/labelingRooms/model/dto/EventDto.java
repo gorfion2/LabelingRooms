@@ -5,6 +5,7 @@ package pl.labelingRooms.model.dto;
  */
 public class EventDto {
 
+    private Long id;
     private String title;
     private String weekDay;
     private String week;
@@ -16,6 +17,14 @@ public class EventDto {
 
     public String getTitle() {
         return title;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public void setTitle(String title) {

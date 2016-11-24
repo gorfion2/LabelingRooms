@@ -29,9 +29,13 @@ abstract public class AbstractController<DBO, DTO, S extends AbstractService<DBO
 //        return service.findAll();
 //    }
 
-    @RequestMapping(value = "/save/{id}", method = RequestMethod.POST)
-    public void save(@RequestBody DTO modelToSave, @PathVariable int id) {
-        service.save(modelToSave);
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public void save(@RequestBody DTO modelToSave) {
+        try {
+            service.save(modelToSave);
+        } catch (InvalidDataException e) {
+            e.printStackTrace();
+        }
     }
 
 //    @RequestMapping(value = "/save/all", method = RequestMethod.POST)

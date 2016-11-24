@@ -9,6 +9,7 @@ var editEventModule = angular.module(
 
 editEventModule.controller('EditEventController', ['$scope', '$location', 'EditEventRepository', 'EditEventService', function ($scope, $location, EditEventRepository, EditEventService) {
 
+    $scope.editAction = $location.path() === '/edytuj/wydarzenie';
     $scope.timeRegex = '^[0-9]{1,2}:[0-9]{1,2}$';
     $scope.roomRegex = '^[0-9]{3}$';
     $scope.setEventStartTime = function (time) {
@@ -19,7 +20,7 @@ editEventModule.controller('EditEventController', ['$scope', '$location', 'EditE
             if (timeTable.length == 2 && $scope.validTime(hour, minute)) {
                 $scope.event.startHour = hour;
                 $scope.event.startMinute = minute;
-                $scope.setEventEndTime($scope.endTime);
+                $scope.setEventEndTime($scope.event.end);
                 $scope.validStartTime = true;
                 return;
             }
@@ -56,12 +57,15 @@ editEventModule.controller('EditEventController', ['$scope', '$location', 'EditE
             return true;
         return false;
     }
-    if (EditEventService.getEvent() !== null) {
+    if ($scope.editAction && EditEventService.getEvent() !== null) {
         $scope.event = EditEventService.getEvent();
         $scope.setEventStartTime($scope.event.start);
         $scope.setEventEndTime($scope.event.end);
     } else {
         $scope.event = {week: 'Każdy', weekDay: 'Poniedziałek'};
+    }
+    $scope.save = function () {
+        EditEventRepository.saveEvent($scope.event);
     }
 
 }]);

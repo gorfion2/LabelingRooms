@@ -7,13 +7,9 @@ var editEventServicesModule = angular.module(
 editEventServicesModule.factory('EditEventRepository', [
     '$resource', function ($resource) {
         return $resource('', {}, {
-            getMyEvents: {
-                method: 'GET',
-                url: '/event/my'
-            },
-            removeMyEvent: {
+            saveEvent: {
                 method: 'POST',
-                url: '/event/remove/'
+                url: '../event/save/'
             }
 
         });

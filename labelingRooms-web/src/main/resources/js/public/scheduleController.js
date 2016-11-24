@@ -84,7 +84,10 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
         $scope.events = [];
 
         $scope.reloadData = function () {
-            IndexService.getEvents({id: 1}, function (events) {
+            var roomId = $location.path().slice(1, 4);
+            if (roomId === undefined || roomId === null || roomId === 0)
+                return;
+            IndexService.getEvents({id: roomId}, function (events) {
                 $scope.events = events;
                 $scope.events.forEach(function (event) {
                     event.style = $scope.eventUtils.getStyle(event.startHour, event.startMinute, event.endHour, event.endMinute);
@@ -92,5 +95,5 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
             });
         };
         $scope.reloadData();
-        // $interval($scope.reloadData, 5000);
+        $interval($scope.reloadData, 5000);
     }]);

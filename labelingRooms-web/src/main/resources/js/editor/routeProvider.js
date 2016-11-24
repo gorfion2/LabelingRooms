@@ -10,9 +10,14 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
             templateUrl: '/templates/editEvent.html',
             controller: 'EditEventController'
         }
-    ).otherwise({
-        redirectTo: '/'
-    })
+    ).when('/dodaj/wydarzenie', {
+            templateUrl: '/templates/editEvent.html',
+            controller: 'EditEventController'
+        }
+    )
+        .otherwise({
+            redirectTo: '/'
+        })
 
 }
 ]);

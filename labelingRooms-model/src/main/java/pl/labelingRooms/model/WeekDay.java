@@ -9,8 +9,8 @@ public enum WeekDay {
 
     private String name;
 
-    private WeekDay(String name){
-        this.name=name;
+    private WeekDay(String name) {
+        this.name = name;
     }
 
     public String getName() {
@@ -23,7 +23,7 @@ public enum WeekDay {
 
     public static WeekDay getValue(String name) {
         for (WeekDay weekDay : WeekDay.values()) {
-            if (weekDay.getName() == name)
+            if (weekDay.getName().equals(name))
                 return weekDay;
         }
         return null;

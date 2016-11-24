@@ -31,7 +31,7 @@ abstract public class AbstractService<DBO, DTO, R extends CrudRepository<DBO, Lo
         return mapper.convertToDTO((List<DBO>) repo.findAll());
     }
 
-    public void save(DTO modelToSave) {
+    public void save(DTO modelToSave) throws InvalidDataException {
         repo.save(mapper.convertToDBO(modelToSave));
     }
 

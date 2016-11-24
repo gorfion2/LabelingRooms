@@ -19,7 +19,8 @@
         <div ng-class="eventForm.startTime.$valid && validStartTime?  'form-group has-success has-feedback': 'form-group has-error has-feedback'">
             <label class="control-label col-sm-3" for="startTime">Godzina rozpoczęcia:</label>
             <div class="col-sm-5">
-                <input ng-pattern="timeRegex" ng-change="setEventStartTime(event.start)" ng-model="event.start" type="text"
+                <input ng-pattern="timeRegex" ng-change="setEventStartTime(event.start)" ng-model="event.start"
+                       type="text"
                        class="form-control" id="startTime" placeholder="np. 12:30" name="startTime" required>
             </div>
         </div>
@@ -57,8 +58,12 @@
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <button ng-disabled="!(eventForm.title.$valid && eventForm.roomId.$valid && eventForm.startTime.$valid && validStartTime && eventForm.endTime.$valid && validEndTime)"
-
+                        ng-show="editAction" ng-click="save()"
                         type="submit" class="btn btn-default">Edytuj
+                </button>
+                <button ng-disabled="!(eventForm.title.$valid && eventForm.roomId.$valid && eventForm.startTime.$valid && validStartTime && eventForm.endTime.$valid && validEndTime)"
+                        ng-hide="editAction" ng-click="save()"
+                        type="submit" class="btn btn-default">Dodaj
                 </button>
             </div>
         </div>

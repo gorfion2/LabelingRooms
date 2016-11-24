@@ -22,6 +22,8 @@ public class EventMapper extends AbstractMapper<Event, EventDto> {
     @Override
     public Event convertToDBO(EventDto eventDto) {
         Event event = new Event();
+        if (eventDto.getId() != null)
+            event.setId(eventDto.getId());
         prepereDuration(eventDto.getStartHour(), eventDto.getStartMinute(), eventDto.getEndHour(), eventDto.getEndMinute());
         event.setDuration(duration);
         event.setStartHour(eventDto.getStartHour());
@@ -45,9 +47,10 @@ public class EventMapper extends AbstractMapper<Event, EventDto> {
         if (event == null)
             return null;
         EventDto eventDto = new EventDto();
+        eventDto.setId(event.getId());
         eventDto.setStartHour(event.getStartHour());
         eventDto.setStartMinute(event.getStartMinute());
-        prepereEndHour(event.getStartHour(), event.getStartMinute(), event.getDuration());
+        prepareEndHour(event.getStartHour(), event.getStartMinute(), event.getDuration());
         eventDto.setEndHour(endHour);
         eventDto.setEndMinute(endMinute);
         eventDto.setTitle(event.getTitle());
@@ -56,7 +59,7 @@ public class EventMapper extends AbstractMapper<Event, EventDto> {
         return eventDto;
     }
 
-    private void prepereEndHour(int startHour, int startMinute, int duration) {
+    private void prepareEndHour(int startHour, int startMinute, int duration) {
         endHour = startHour;
         startMinute += duration;
         while (startMinute - 60 >= 0) {
