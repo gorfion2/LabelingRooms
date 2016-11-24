@@ -1,6 +1,7 @@
 package pl.labelingRooms.web.controller;
 
-import pl.labelingRooms.service.mappers.AbstractMapper;
+import pl.labelingRooms.model.InvalidDataException;
+import pl.labelingRooms.service.mapper.AbstractMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -38,9 +39,13 @@ abstract public class AbstractController<DBO, DTO, S extends AbstractService<DBO
 //        service.save(modelsToSave);
 //    }
 
-    @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
-    public void delete(@RequestBody DTO modelToDelete, @PathVariable int id) {
-        service.delete(modelToDelete);
+    @RequestMapping(value = "/remove", method = RequestMethod.POST)
+    public void delete(@RequestBody DTO modelToDelete) {
+        try {
+            service.delete(modelToDelete);
+        } catch (InvalidDataException e) {
+            e.printStackTrace();
+        }
     }
 
 //    @RequestMapping(value = "/delete/all", method = RequestMethod.DELETE)

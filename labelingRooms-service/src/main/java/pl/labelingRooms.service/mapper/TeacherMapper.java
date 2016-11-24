@@ -1,4 +1,4 @@
-package pl.labelingRooms.service.mappers;
+package pl.labelingRooms.service.mapper;
 
 import org.springframework.stereotype.Component;
 import pl.labelingRooms.model.dbo.Teacher;

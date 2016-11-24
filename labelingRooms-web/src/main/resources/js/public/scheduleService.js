@@ -2,7 +2,7 @@
  * Created by Kamil on 2016-10-31.
  */
 var scheduleServicesModule = angular.module(
-    "scheduleServicesModule", ['ngResource']);
+    "eventsServicesModule", ['ngResource']);
 
 scheduleServicesModule.factory('IndexService', [
     '$resource', function ($resource) {

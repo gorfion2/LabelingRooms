@@ -1,4 +1,4 @@
-package pl.labelingRooms.service.mappers;
+package pl.labelingRooms.service.mapper;
 
 import java.util.List;
 import java.util.stream.Collectors;

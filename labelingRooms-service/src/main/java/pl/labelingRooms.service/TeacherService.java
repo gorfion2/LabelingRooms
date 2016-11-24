@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import pl.labelingRooms.model.dbo.Teacher;
 import pl.labelingRooms.model.dto.TeacherDto;
 import pl.labelingRooms.repo.TeacherRepository;
-import pl.labelingRooms.service.mappers.TeacherMapper;
+import pl.labelingRooms.service.mapper.TeacherMapper;
 
 /**
  * Created by Kamil on 2016-11-12.

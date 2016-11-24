@@ -2,7 +2,7 @@
  * Created by Kamil on 2016-10-26.
  */
 var scheduleModule = angular.module(
-    'scheduleModule', ['ngRoute', 'scheduleModule', 'scheduleServicesModule']);
+    'scheduleModule', ['ngRoute', 'scheduleModule', 'eventsServicesModule']);
 
 scheduleModule.controller('scheduleController', ['$scope', '$interval', '$location', 'IndexService',
     function ($scope, $interval, $location, IndexService) {

@@ -10,6 +10,7 @@ public class EventDto {
     private int startHour;
     private int startMinute;
     private int duration;
+    private int roomId;
 
     public String getTitle() {
         return title;
@@ -49,5 +50,13 @@ public class EventDto {
 
     public void setDuration(int duration) {
         this.duration = duration;
+    }
+
+    public int getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(int roomId) {
+        this.roomId = roomId;
     }
 }

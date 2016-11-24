@@ -1,6 +1,7 @@
 package pl.labelingRooms.service;
 
-import pl.labelingRooms.service.mappers.AbstractMapper;
+import pl.labelingRooms.model.InvalidDataException;
+import pl.labelingRooms.service.mapper.AbstractMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 
@@ -38,7 +39,7 @@ abstract public class AbstractService<DBO, DTO, R extends CrudRepository<DBO, Lo
         repo.save(mapper.convertToDBO((List<DTO>) modelsToSave));
     }
 
-    public void delete(DTO modelToDelete) {
+    public void delete(DTO modelToDelete) throws InvalidDataException {
         repo.delete(mapper.convertToDBO(modelToDelete));
     }
 

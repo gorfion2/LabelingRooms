@@ -9,39 +9,146 @@
 
     <link rel="stylesheet" href="/js/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 
-    <script src="/js/public/routeProvider.js"></script>
-    <script src="/js/public/scheduleController.js"></script>
-    <script src="/js/public/scheduleService.js"></script>
+    <script src="/js/editor/routeProvider.js"></script>
+    <script src="/js/editor/eventsController.js"></script>
+    <script src="/js/editor/eventsService.js"></script>
+    <script src="/js/editor/editEventControllers.js"></script>
 </head>
 <style>
 
-    .navbar-inverse {
-        border-radius: 0;
+    .navbar-default {
+        background-color: #9b59b6;
+        border-color: #9b59b6;
     }
 
-    .navbar-inverse {
-        background-color: rgba(0, 0, 0, 0.4);
-        border-color: transparent;
+    .navbar-default .navbar-brand {
+        color: #ecf0f1;
     }
 
-    .navbar-inverse .navbar-nav > li > a {
-        font-size: 12px;
-        font-weight: 800;
-        padding: 5px 0px;
-        letter-spacing: 2px;
-        margin: 10px 20px 10px 20px;
-        color: #FFF;
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-text {
+        color: #ecf0f1;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #ecf0f1;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav > li > .dropdown-menu {
+        background-color: #9b59b6;
+    }
+
+    .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+        color: #ecf0f1;
+    }
+
+    .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+        color: #ffffff;
+        background-color: #9b59b6;
+    }
+
+    .navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+        background-color: #9b59b6;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffffff;
+        background-color: #9b59b6;
+    }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #ffffff;
+        background-color: #9b59b6;
+    }
+
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #ffffff;
+        background-color: #9b59b6;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #9b59b6;
+    }
+
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #9b59b6;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ecf0f1;
+    }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #ecf0f1;
+    }
+
+    .navbar-default .navbar-link {
+        color: #ecf0f1;
+    }
+
+    .navbar-default .navbar-link:hover {
+        color: #ffffff;
+    }
+
+    @media (max-width: 767px) {
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+            color: #ecf0f1;
+        }
+
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #ffffff;
+        }
+
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+            color: #ffffff;
+            background-color: #9b59b6;
+        }
     }
 
     #bg {
         border-style: solid;
         border-width: 1px;
         position: fixed;
-        background-image: url("/js/public/aei.jpg");
+        /*background-image: url("/js/public/aei.jpg");*/
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: 100%;
+    }
+
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+        background-color: #9b59b6;
+    }
+
+    .nav > li > a, .nav > li > a:hover, .nav > li > a:focus {
+        color: #9b59b6;
+    }
+    #left-navbar{
+        border-color: #9b59b6;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5%;
     }
 </style>
 
@@ -49,23 +156,25 @@
 <div id="bg">
 
     <div ng-app="mainApp">
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">WebSiteName</a>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
-                </ul>
+                <ul class="nav navbar-nav"></ul>
             </div>
         </nav>
 
-        <p><a href="#index">Index</a></p>
-        <div ng-view="true"></div>
-
+        <div class="col-md-2" >
+            <ul class="nav nav-pills nav-stacked" id="left-navbar">
+                <li role="presentation" ><a href="#">Home</a></li>
+                <li role="presentation" class="active"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <div ng-view="true"></div>
+        </div>
 
     </div>
 

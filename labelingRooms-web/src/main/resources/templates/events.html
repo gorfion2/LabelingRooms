@@ -1,0 +1,27 @@
+<h2>Moje zajęcia:</h2>
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>Opis<br><input class="form-control" type="text" ng-model="eventFilters.title"/></th>
+        <th>Dzień<br><input class="form-control" type="text" ng-model="eventFilters.weekDayIndex"/></th>
+        <th>Rozpoczęcie<br><input class="form-control" type="text" ng-model="eventFilters.start"/></th>
+        <th>Zakończenie<br><input class="form-control" type="text" ng-model="eventFilters.end"/></th>
+        <th>Sala<br><input class="form-control" type="text" ng-model="eventFilters.roomId"/></th>
+        <th>Opcje</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr ng-repeat="event in events| filter:eventFilters">
+        <td>{{event.title}}</td>
+        <td>{{event.weekDayIndex}}</td>
+        <td>{{event.start}}</td>
+        <td>13:30</td>
+        <td>{{event.roomId}}</td>
+        <td><span class="glyphicon glyphicon-pencil" ng-click="editEvent(event)"></span>
+            <span class="glyphicon glyphicon-remove" ng-click="removeEvent(event)"></span>
+        </td>
+    </tr>
+    </tbody>
+
+</table>

@@ -20,4 +20,14 @@ public enum WeekDay {
     public void setIndex(int index) {
         this.index = index;
     }
+
+    public static WeekDay getValue(int index) {
+        for (WeekDay weekDay : WeekDay.values()) {
+            if (weekDay.getIndex() == index)
+                return weekDay;
+        }
+        return null;
+    }
+
+
 }
