@@ -5,7 +5,7 @@ var roomsModule = angular.module(
     'RoomsModule', []);
 
 roomsModule.controller('RoomsController', ['$scope', '$location',
-    'RoomsService', function ($scope, $location, RoomsService) {
+    'RoomsService','EditRoomService', function ($scope, $location, RoomsService, EditRoomService) {
         $scope.rooms = [];
 
         $scope.reloadRooms = function () {
@@ -20,8 +20,8 @@ roomsModule.controller('RoomsController', ['$scope', '$location',
         $scope.reloadRooms();
 
         $scope.editRoom = function (room) {
-            // EditRoomService.setRoom(room);
-            $location.path('/edytuj/wydarzenie');
+            EditRoomService.setRoom(room);
+            $location.path('/edytuj/pokoj');
         };
         $scope.removeRoom = function (room) {
             RoomsService.removeMyRoom(room, function (status) {

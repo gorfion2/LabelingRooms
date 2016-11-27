@@ -2,9 +2,11 @@ package pl.labelingRooms.web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.labelingRooms.model.DataWrapper;
+import pl.labelingRooms.model.Status;
 import pl.labelingRooms.model.dbo.Room;
 import pl.labelingRooms.model.dto.EventDto;
 import pl.labelingRooms.model.dto.RoomDto;
@@ -33,8 +35,18 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
             return new DataWrapper<List<RoomDto>>(null, service.findAll());
         } catch (Exception e) {
             e.printStackTrace();
-            return  new DataWrapper<List<RoomDto>>(e.getMessage(),null);
+            return new DataWrapper<List<RoomDto>>(e.getMessage(), null);
         }
 
+    }
+
+    @RequestMapping("/edit")
+    public Status edit(@RequestBody RoomDto modelToEdit) {
+        try {
+            service.edit(modelToEdit);
+            return new Status("", true);
+        } catch (Exception e) {
+            return handleException(e);
+        }
     }
 }

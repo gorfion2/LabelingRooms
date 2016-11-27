@@ -1,9 +1,6 @@
 /**
  * Created by Kamil on 2016-11-23.
  */
-/**
- * Created by Kamil on 2016-11-21.
- */
 var editEventModule = angular.module(
     'EditEventModule', []);
 

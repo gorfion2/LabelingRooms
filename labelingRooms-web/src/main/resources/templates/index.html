@@ -10,12 +10,18 @@
     <link rel="stylesheet" href="/js/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 
     <script src="/js/editor/routeProvider.js"></script>
-    <script src="/js/editor/roomsServices.js"></script>
+
     <script src="/js/editor/eventsControllers.js"></script>
     <script src="/js/editor/eventsServices.js"></script>
+
     <script src="/js/editor/editEventControllers.js"></script>
     <script src="/js/editor/editEventServices.js"></script>
+
+    <script src="/js/editor/roomsServices.js"></script>
     <script src="/js/editor/roomsControllers.js"></script>
+
+    <script src="/js/editor/editRoomServices.js"></script>
+    <script src="/js/editor/editRoomControllers.js"></script>
 
 </head>
 <style>
@@ -163,18 +169,18 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">WebSiteName</a>
+                    <a class="navbar-brand" href="#">Plan zajęć</a>
                 </div>
                 <ul class="nav navbar-nav"></ul>
             </div>
         </nav>
 
-        <div class="col-md-2" >
+        <div class="col-md-2" ng-controller="NavbarController">
             <ul class="nav nav-pills nav-stacked" id="left-navbar">
-                <li role="presentation" class="active"><a href="#/">Wszystkie wydarzenia</a></li>
-                <li role="presentation" ><a href="#/dodaj/wydarzenie">Dodaj wydarzenie</a></li>
-                <li role="presentation" ><a href="#/pokoje">Wszystkie pokoje</a></li>
-                <li role="presentation"><a href="#">Messages</a></li>
+                <li role="presentation" ng-class="isEventsPage() ? 'active' : ''"><a href="#/">Wszystkie wydarzenia</a></li>
+                <li role="presentation" ng-class="isAddEventPage() ? 'active' : ''"><a href="#/dodaj/wydarzenie">Dodaj wydarzenie</a></li>
+                <li role="presentation" ng-class="isRoomsPage() ? 'active' : ''" ><a href="#/pokoje">Wszystkie pokoje</a></li>
+                <li role="presentation" ng-class="isAddRoomPage() ? 'active' : ''"><a href="#/dodaj/pokoj">Dodaj pokoj</a></li>
             </ul>
         </div>
         <div class="col-md-10">
