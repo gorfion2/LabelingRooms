@@ -10,9 +10,7 @@ import java.util.List;
 public class Room {
 
     @Id
-    @GeneratedValue
-    private long id;
-    private int number;
+    private Long number;
 
     @OneToMany(mappedBy = "room")
     private List<Event> eventList;
@@ -20,19 +18,11 @@ public class Room {
     @JoinTable(name = "teacher_room",joinColumns = {@JoinColumn(name = "room_id")},inverseJoinColumns = {@JoinColumn(name = "teacher_id")})
     private List<Teacher> teacherList;
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public int getNumber() {
+    public Long getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(Long number) {
         this.number = number;
     }
 

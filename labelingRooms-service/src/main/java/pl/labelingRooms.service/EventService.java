@@ -35,8 +35,7 @@ public class EventService extends AbstractService<Event, EventDto, EventReposito
     @Override
     public void delete(EventDto modelToDelete) throws InvalidDataException {
         eventValidator.validate(modelToDelete);
-        Event eventToDelete = mapper.convertToDBO(modelToDelete);
-        System.out.printf("Delete");
+        repo.delete(mapper.convertToDBO(modelToDelete));
     }
 
     @Override

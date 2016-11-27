@@ -1,14 +1,15 @@
 package pl.labelingRooms.web.controller;
 
-import pl.labelingRooms.model.InvalidDataException;
-import pl.labelingRooms.service.mapper.AbstractMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import pl.labelingRooms.model.InvalidDataException;
+import pl.labelingRooms.model.Status;
 import pl.labelingRooms.service.AbstractService;
+import pl.labelingRooms.service.mapper.AbstractMapper;
 
 /**
  * Created by Kamil S on 2016-03-16.
@@ -30,11 +31,12 @@ abstract public class AbstractController<DBO, DTO, S extends AbstractService<DBO
 //    }
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
-    public void save(@RequestBody DTO modelToSave) {
+    public Status save(@RequestBody DTO modelToSave) {
         try {
             service.save(modelToSave);
-        } catch (InvalidDataException e) {
-            e.printStackTrace();
+            return new Status("", true);
+        } catch (Exception e) {
+            return handleException(e);
         }
     }
 
@@ -44,11 +46,12 @@ abstract public class AbstractController<DBO, DTO, S extends AbstractService<DBO
 //    }
 
     @RequestMapping(value = "/remove", method = RequestMethod.POST)
-    public void delete(@RequestBody DTO modelToDelete) {
+    public Status delete(@RequestBody DTO modelToDelete) {
         try {
             service.delete(modelToDelete);
-        } catch (InvalidDataException e) {
-            e.printStackTrace();
+            return new Status("", true);
+        } catch (Exception e) {
+            return handleException(e);
         }
     }
 
@@ -56,4 +59,12 @@ abstract public class AbstractController<DBO, DTO, S extends AbstractService<DBO
 //    public void delete(@RequestBody Iterable<DTO> modelsToDelete) {
 //        service.delete(modelsToDelete);
 //    }
+
+    protected Status handleException(Exception e) {
+        if (e instanceof InvalidDataException) {
+            return new Status(((InvalidDataException) e).getReason(), false);
+        }
+        return new Status("Wystąpił problem", false);
+
+    }
 }

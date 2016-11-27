@@ -65,7 +65,14 @@ editEventModule.controller('EditEventController', ['$scope', '$location', 'EditE
         $scope.event = {week: 'Każdy', weekDay: 'Poniedziałek'};
     }
     $scope.save = function () {
-        EditEventRepository.saveEvent($scope.event);
+        EditEventRepository.saveEvent($scope.event, function (status) {
+            if(status.success===true){
+                $location.path('/');
+            }else{
+                alert(status.message);
+            }
+            
+        });
     }
 
 }]);

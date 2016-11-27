@@ -4,7 +4,7 @@
 var eventsModule = angular.module(
     'EventsModule', []);
 
-eventsModule.controller('EventsController', ['$scope', '$location', 'EventsService', 'EditEventService', function ($scope, $location, EventsService, EditEventService) {
+eventsModule.controller('EventsController', ['$scope', '$location', '$timeout', 'EventsService', 'EditEventService', function ($scope, $location, $timeout, EventsService, EditEventService) {
     $scope.events = [];
 
     $scope.reloadEvents = function () {
@@ -25,7 +25,12 @@ eventsModule.controller('EventsController', ['$scope', '$location', 'EventsServi
         $location.path('/edytuj/wydarzenie');
     };
     $scope.removeEvent = function (event) {
-        EventsService.removeMyEvent(event);
-        alert("Remove")
+        EventsService.removeMyEvent(event, function (status) {
+            if (status.success === true) {
+                $scope.reloadEvents()
+            } else {
+                alert(status.message);
+            }
+        });
     };
 }]);

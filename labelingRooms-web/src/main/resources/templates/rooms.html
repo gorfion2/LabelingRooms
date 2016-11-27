@@ -1,0 +1,23 @@
+<h2>Pokoje:</h2>
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>Numer<br><input class="form-control" type="text" ng-model="roomFilters.title"/></th>
+        <th>Typ<br><input class="form-control" type="text" ng-model="roomFilters.weekDayIndex"/></th>
+        <th>Właściciele<br><input class="form-control" type="text" ng-model="roomFilters.start"/></th>
+        <th>Opcje</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr ng-repeat="room in rooms| filter:roomFilters">
+        <td>{{room.number}}</td>
+        <td>typ</td>
+        <td>właściciel</td>
+        <td><span class="glyphicon glyphicon-pencil" ng-click="editRoom(room)"></span>
+            <span class="glyphicon glyphicon-remove" ng-click="removeRoom(room)"></span>
+        </td>
+    </tr>
+    </tbody>
+
+</table>

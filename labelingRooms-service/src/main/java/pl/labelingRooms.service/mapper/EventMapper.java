@@ -55,7 +55,7 @@ public class EventMapper extends AbstractMapper<Event, EventDto> {
         eventDto.setEndMinute(endMinute);
         eventDto.setTitle(event.getTitle());
         eventDto.setWeekDay(event.getWeekDay().getName());
-        eventDto.setRoomId(event.getRoom().getNumber());
+        eventDto.setRoomId(event.getRoom().getNumber().intValue());
         return eventDto;
     }
 

@@ -32,7 +32,7 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
         };
 
         $scope.day = {
-            names: ["Poniedziałek", "Wtorek", "Sroda", "Czwartek", "Piątek"],
+            names: ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek"],
             height: 10,
             getStyle: function (index) {
                 $scope.tempStyle = {};

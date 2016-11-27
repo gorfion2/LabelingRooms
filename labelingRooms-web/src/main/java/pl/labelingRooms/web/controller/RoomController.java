@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import pl.labelingRooms.model.DataWrapper;
 import pl.labelingRooms.model.dbo.Room;
 import pl.labelingRooms.model.dto.EventDto;
 import pl.labelingRooms.model.dto.RoomDto;
@@ -24,5 +25,16 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
     @RequestMapping("/{roomId}/events")
     public List<EventDto> getEventByRoom(@PathVariable Long roomId) {
         return eventService.getEventsByRoom(service.findOneDBO(roomId));
+    }
+
+    @RequestMapping("/all")
+    public DataWrapper<List<RoomDto>> getAllRooms() {
+        try {
+            return new DataWrapper<List<RoomDto>>(null, service.findAll());
+        } catch (Exception e) {
+            e.printStackTrace();
+            return  new DataWrapper<List<RoomDto>>(e.getMessage(),null);
+        }
+
     }
 }
