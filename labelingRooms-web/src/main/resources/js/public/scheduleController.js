@@ -6,6 +6,25 @@ var scheduleModule = angular.module(
 
 scheduleModule.controller('scheduleController', ['$scope', '$interval', '$location', 'IndexService',
     function ($scope, $interval, $location, IndexService) {
+        $scope.roomUtils = {};
+        $scope.roomUtils.setBackgroundColor = function (style) {
+            if ($scope.room.backgroundColor !== undefined) {
+                style['background-color'] = $scope.room.backgroundColor;
+            }
+        };
+
+        $scope.roomUtils.setBorderColor = function (style) {
+            if ($scope.room.borderColor !== undefined) {
+                style['border-color'] = $scope.room.borderColor;
+            }
+        };
+
+        $scope.roomUtils.setLabelColor = function (style) {
+            if ($scope.room.labelColor !== undefined) {
+                style['background-color'] = $scope.room.labelColor;
+            }
+        };
+
 
         $scope.hourColumn = {
             width: 10,
@@ -22,6 +41,8 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
             },
             getStyle: function (index) {
                 $scope.tempStyle = {};
+                $scope.roomUtils.setBorderColor($scope.tempStyle);
+                $scope.roomUtils.setLabelColor($scope.tempStyle);
                 // if (index == $scope.day.names.length - 1)
                 //     $scope.tempStyle = {"border-width": "0px 0px 0px 0px"};
                 $scope.tempStyle.width = $scope.hourColumn.width + "%";
@@ -36,8 +57,10 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
             height: 10,
             getStyle: function (index) {
                 $scope.tempStyle = {};
+                $scope.roomUtils.setBorderColor($scope.tempStyle);
+                $scope.roomUtils.setLabelColor($scope.tempStyle);
                 if (index == $scope.day.names.length - 1)
-                    $scope.tempStyle = {"border-width": "0px 0px 0px 0px"};
+                    $scope.tempStyle["border-width"] = "0px 0px 0px 0px";
 
                 $scope.tempStyle.left = (index / $scope.day.names.length) * (100 - $scope.hourColumn.width) + $scope.hourColumn.width + "%";
                 $scope.tempStyle.width = (100 - $scope.hourColumn.width) / $scope.day.names.length + "%";
@@ -50,6 +73,8 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
                 },
                 getStyle: function (index) {
                     $scope.tempStyle = {};
+                    $scope.roomUtils.setBackgroundColor($scope.tempStyle);
+                    $scope.roomUtils.setBorderColor($scope.tempStyle);
                     if (index % 4 == 0)
                         $scope.tempStyle['border-width'] = '2px 0px 0px 0px';
                     $scope.tempStyle.height = (100 - $scope.day.height) / $scope.day.hours.quantity + "%";
@@ -61,7 +86,9 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
         $scope.eventUtils = {
             getStyle: function (startHour, startMinute, endHour, endMinute) {
                 $scope.tempStyle = {};
+                $scope.tempStyle['background-color'] = 'red';
                 $scope.tempStyle.width = "100%";
+                $scope.roomUtils.setBorderColor($scope.tempStyle);
                 var startTimeDecimal = ( startHour - $scope.hourColumn.startHour + startMinute / 60);
                 if (startMinute > endMinute) {
                     endMinute += 60;
@@ -82,16 +109,22 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
         };
         $scope.roomId = $location.search();
         $scope.events = [];
+        $scope.room = {};
+
 
         $scope.reloadData = function () {
             var roomId = $location.path().slice(1, 4);
             if (roomId === undefined || roomId === null || roomId === 0)
                 return;
+
             IndexService.getEvents({id: roomId}, function (events) {
                 $scope.events = events;
                 $scope.events.forEach(function (event) {
                     event.style = $scope.eventUtils.getStyle(event.startHour, event.startMinute, event.endHour, event.endMinute);
                 })
+            });
+            IndexService.getRoom({id: roomId}, function (room) {
+                $scope.room = room;
             });
         };
         $scope.reloadData();

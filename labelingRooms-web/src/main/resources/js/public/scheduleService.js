@@ -13,21 +13,10 @@ scheduleServicesModule.factory('IndexService', [
                 url: '../../room/:id/events',
                 isArray: true
             },
-            getUser: {
+            getRoom: {
                 params: {id: "@id"},
                 method: 'GET',
-                url: '../user/:id'
-            },
-            postGret: {
-                params: {id: "@id"},
-                method: 'POST',
-                url: '../gret/save/:id'
-            },
-
-            postUser: {
-                method: 'POST',
-                url: '../user'
-                //               isArray: true
+                url: '../../room/:id',
             }
         });
     }]);

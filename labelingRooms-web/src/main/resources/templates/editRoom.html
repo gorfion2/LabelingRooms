@@ -2,23 +2,52 @@
     {{room}}
     <form class="form-horizontal" name="roomForm">
 
-        <div ng-class="roomForm.number.$valid ?  'form-group has-success has-feedback': 'form-group has-error has-feedback'">
+        <div ng-class="roomForm.number.$valid ?  'form-group': 'form-group has-error has-feedback'">
             <label class="control-label col-sm-3" for="room">Numer:</label>
             <div class="col-sm-5">
-                <input ng-disabled="editAction" ng-pattern="roomRegex" name="number" ng-model="room.number" type="text" class="form-control"
+                <input ng-disabled="editAction" ng-pattern="roomRegex" name="number" ng-model="room.number" type="text"
+                       class="form-control"
                        id="room"
                        placeholder="np. 903" required>
+            </div>
+        </div>
+        <div ng-class="roomForm.labColor.$valid ?  'form-group': 'form-group has-error has-feedback'">
+            <label class="control-label col-sm-3" for="labColor">Color laboratorium:</label>
+            <div class="col-sm-5">
+                <input name="labColor" ng-model="room.labColor" type="color" class="form-control"
+                       id="labColor">
+            </div>
+        </div>
+        <div ng-class="roomForm.labelColor.$valid ?  'form-group': 'form-group has-error has-feedback'">
+            <label class="control-label col-sm-3" for="labelColor">Color szczegółów:</label>
+            <div class="col-sm-5">
+                <input name="labelColor" ng-model="room.labelColor" type="color" class="form-control"
+                       id="labelColor">
+            </div>
+        </div>
+        <div ng-class="roomForm.borderColor.$valid ?  'form-group': 'form-group has-error has-feedback'">
+            <label class="control-label col-sm-3" for="borderColor">Color obramowania:</label>
+            <div class="col-sm-5">
+                <input name="borderColor" ng-model="room.borderColor" type="color" class="form-control"
+                       id="borderColor">
+            </div>
+        </div>
+        <div ng-class="roomForm.backgroundColor.$valid ?  'form-group': 'form-group has-error has-feedback'">
+            <label class="control-label col-sm-3" for="backgroundColor">Color tła:</label>
+            <div class="col-sm-5">
+                <input name="backgroundColor" ng-model="room.backgroundColor" type="color" class="form-control"
+                       id="backgroundColor">
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <button ng-disabled="!(roomForm.number.$valid)"
                         ng-show="editAction" ng-click="edit()"
-                        type="submit" class="btn btn-default">Edytuj
+                        type="button" class="btn btn-default">Edytuj
                 </button>
                 <button ng-disabled="!(roomForm.number.$valid )"
                         ng-hide="editAction" ng-click="save()"
-                        type="submit" class="btn btn-default">Dodaj
+                        type="button" class="btn btn-default">Dodaj
                 </button>
             </div>
         </div>

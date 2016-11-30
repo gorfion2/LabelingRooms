@@ -14,6 +14,10 @@ public class RoomMapper extends AbstractMapper<Room, RoomDto> {
     public Room convertToDBO(RoomDto roomDto) {
         Room room = new Room();
         room.setNumber(roomDto.getNumber());
+        room.setBackgroundColor(roomDto.getBackgroundColor());
+        room.setBorderColor(roomDto.getBorderColor());
+        room.setLabColor(roomDto.getLabColor());
+        room.setLabelColor(roomDto.getLabelColor());
         return room;
     }
 
@@ -21,6 +25,10 @@ public class RoomMapper extends AbstractMapper<Room, RoomDto> {
     public RoomDto convertToDTO(Room room) {
         RoomDto roomDto = new RoomDto();
         roomDto.setNumber(room.getNumber());
+        roomDto.setBackgroundColor(room.getBackgroundColor());
+        roomDto.setBorderColor(room.getBorderColor());
+        roomDto.setLabColor(room.getLabColor());
+        roomDto.setLabelColor(room.getLabelColor());
         return roomDto;
     }
 }

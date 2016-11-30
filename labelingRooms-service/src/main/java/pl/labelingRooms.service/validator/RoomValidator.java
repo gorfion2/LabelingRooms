@@ -14,5 +14,6 @@ public class RoomValidator extends AbstractValidator<RoomDto> {
     @Override
     public void validate(RoomDto roomDto) throws InvalidDataException {
         validateNotNull(roomDto);
+        validateAllFieldNotNull(roomDto);
     }
 }

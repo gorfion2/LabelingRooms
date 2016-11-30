@@ -11,7 +11,7 @@ editRoomModule.controller('EditRoomController', ['$scope', '$location', 'EditRoo
     $scope.save = function () {
         EditRoomRepository.saveRoom($scope.room, function (status) {
             if(status.success===true){
-                $location.path('/');
+                $location.path('/pokoje');
             }else{
                 alert(status.message);
             }
@@ -33,7 +33,7 @@ editRoomModule.controller('EditRoomController', ['$scope', '$location', 'EditRoo
     if ($scope.editAction && EditRoomService.getRoom() !== null) {
         $scope.room = EditRoomService.getRoom();
     } else {
-        $scope.room = {};
+        $scope.room = {"borderColor":"#ffffff","backgroundColor":"#9B9B9B","labColor":"#0a3aff","labelColor":"#7A4DF2"} ;
     }
 
 }]);

@@ -1,14 +1,14 @@
 <div class="container">
     {{event}}
     <form class="form-horizontal" name="eventForm">
-        <div ng-class="eventForm.title.$valid ?  'form-group has-success has-feedback': 'form-group has-error has-feedback'">
+        <div ng-class="eventForm.title.$valid ?  'form-group': 'form-group has-error has-feedback'">
             <label class="control-label col-sm-3" for="title">Opis:</label>
             <div class="col-sm-5">
                 <input name="title" ng-model="event.title" type="text" class="form-control" id="title"
                        placeholder="np. PUM GKIO2" required>
             </div>
         </div>
-        <div ng-class="eventForm.roomId.$valid ?  'form-group has-success has-feedback': 'form-group has-error has-feedback'">
+        <div ng-class="eventForm.roomId.$valid ?  'form-group': 'form-group has-error has-feedback'">
             <label class="control-label col-sm-3" for="room">Sala:</label>
             <div class="col-sm-5">
                 <input ng-pattern="roomRegex" name="roomId" ng-model="event.roomId" type="text" class="form-control"
@@ -16,7 +16,7 @@
                        placeholder="np. 903" required>
             </div>
         </div>
-        <div ng-class="eventForm.startTime.$valid && validStartTime?  'form-group has-success has-feedback': 'form-group has-error has-feedback'">
+        <div ng-class="eventForm.startTime.$valid && validStartTime?  'form-group': 'form-group has-error has-feedback'">
             <label class="control-label col-sm-3" for="startTime">Godzina rozpoczęcia:</label>
             <div class="col-sm-5">
                 <input ng-pattern="timeRegex" ng-change="setEventStartTime(event.start)" ng-model="event.start"
@@ -24,7 +24,7 @@
                        class="form-control" id="startTime" placeholder="np. 12:30" name="startTime" required>
             </div>
         </div>
-        <div ng-class="eventForm.endTime.$valid && validEndTime?  'form-group has-success has-feedback': 'form-group has-error has-feedback'">
+        <div ng-class="eventForm.endTime.$valid && validEndTime?  'form-group': 'form-group has-error has-feedback'">
             <label class="control-label col-sm-3" for="endTime">Godzina zakończenia:</label>
             <div class="col-sm-5">
                 <input ng-pattern="timeRegex" ng-change="setEventEndTime(event.end)" ng-model="event.end" type="text"
