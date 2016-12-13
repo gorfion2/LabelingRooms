@@ -1,20 +1,32 @@
+<style>
+    .myRoomClass {
+        background-color: #a384a3;
+    }
+
+    .myRoomClass:hover {
+        background-color: #a384a3;
+    }
+
+</style>
 <h2>Pokoje:</h2>
 <table class="table table-hover">
     <thead>
     <tr>
         <th>Numer<br><input class="form-control" type="text" ng-model="roomFilters.number"/></th>
         <th>Typ<br><input class="form-control" type="text" ng-model="roomFilters.weekDayIndex"/></th>
-        <th>Właściciele<br><input class="form-control" type="text" ng-model="roomFilters.start"/></th>
+        <th>Właściciele<br><input class="form-control" type="text" ng-model="roomFilters.owners"/></th>
         <th>Opcje</th>
     </tr>
     </thead>
 
     <tbody>
-    <tr ng-repeat="room in rooms| filter:roomFilters">
+    <tr ng-repeat="room in rooms| filter:roomFilters" ng-class="room.yourRoom ?  'myRoomClass': ''">
         <td>{{room.number}}</td>
         <td>typ</td>
-        <td>właściciel</td>
-        <td><span class="glyphicon glyphicon-pencil" ng-click="editRoom(room)"></span>
+        <td> {{room.owners}}</td>
+        <td><span  ng-hide="room.yourRoom" class="glyphicon glyphicon-home" ng-click="assignRoom(room)"></span>
+            <span ng-show="room.yourRoom" class="glyphicon glyphicon-share-alt" ng-click="exitRoom(room)"></span>
+            <span class="glyphicon glyphicon-pencil" ng-click="editRoom(room)"></span>
             <span class="glyphicon glyphicon-remove" ng-click="removeRoom(room)"></span>
         </td>
     </tr>

@@ -2,10 +2,12 @@ package pl.labelingRooms.service.mapper;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import pl.labelingRooms.model.InvalidDataException;
 import pl.labelingRooms.model.WeekDay;
 import pl.labelingRooms.model.dbo.Event;
 import pl.labelingRooms.model.dto.EventDto;
 import pl.labelingRooms.service.RoomService;
+import pl.labelingRooms.service.TeacherService;
 
 /**
  * Created by Kamil on 2016-10-26.
@@ -15,6 +17,10 @@ public class EventMapper extends AbstractMapper<Event, EventDto> {
 
     @Autowired
     RoomService roomService;
+
+    @Autowired
+    private TeacherService teacherService;
+
     private int endHour;
     private int endMinute;
     private int duration;
@@ -31,6 +37,10 @@ public class EventMapper extends AbstractMapper<Event, EventDto> {
         event.setTitle(eventDto.getTitle());
         event.setWeekDay(WeekDay.getValue(eventDto.getWeekDay()));
         event.setRoom(roomService.findOneDBO((long) eventDto.getRoomId()));
+        try {
+            event.setTeacher(teacherService.getLoggedTeacher());
+        } catch (InvalidDataException e) {
+        }
         return event;
     }
 

@@ -17,7 +17,7 @@ editRoomModule.controller('EditRoomController', ['$scope', '$location', 'EditRoo
             }
 
         });
-    }
+    };
 
     $scope.edit = function () {
         EditRoomRepository.editRoom($scope.room, function (status) {
@@ -28,7 +28,7 @@ editRoomModule.controller('EditRoomController', ['$scope', '$location', 'EditRoo
             }
 
         });
-    }
+    };
 
     if ($scope.editAction && EditRoomService.getRoom() !== null) {
         $scope.room = EditRoomService.getRoom();

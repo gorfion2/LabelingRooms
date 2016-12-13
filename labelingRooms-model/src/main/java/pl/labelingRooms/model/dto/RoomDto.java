@@ -1,5 +1,7 @@
 package pl.labelingRooms.model.dto;
 
+import java.util.List;
+
 /**
  * Created by Kamil on 2016-11-12.
  */
@@ -9,6 +11,8 @@ public class RoomDto {
     private String labelColor;
     private String borderColor;
     private String backgroundColor;
+    private boolean yourRoom;
+    private List<String> teacherNameList;
 
     public Long getNumber() {
         return number;
@@ -48,5 +52,21 @@ public class RoomDto {
 
     public void setBackgroundColor(String backgroundColor) {
         this.backgroundColor = backgroundColor;
+    }
+
+    public List<String> getTeacherNameList() {
+        return teacherNameList;
+    }
+
+    public void setTeacherNameList(List<String> teacherNameList) {
+        this.teacherNameList = teacherNameList;
+    }
+
+    public boolean isYourRoom() {
+        return yourRoom;
+    }
+
+    public void setYourRoom(boolean yourRoom) {
+        this.yourRoom = yourRoom;
     }
 }

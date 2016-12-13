@@ -15,6 +15,16 @@ roomsServicesModule.factory('RoomsService', [
             removeMyRoom: {
                 method: 'POST',
                 url: '/room/remove/'
+            },
+            assignRoom: {
+                params: {id: "@id"},
+                method: 'GET',
+                url: '../../room/:id/assign',
+            },
+            exitRoom: {
+                params: {id: "@id"},
+                method: 'GET',
+                url: '../../room/:id/exit'
             }
 
         });

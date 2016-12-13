@@ -23,6 +23,12 @@
     <script src="/js/editor/editRoomServices.js"></script>
     <script src="/js/editor/editRoomControllers.js"></script>
 
+    <script src="/js/editor/editTeacherServices.js"></script>
+    <script src="/js/editor/editTeacherController.js"></script>
+
+    <script src="/js/editor/editMessageServices.js"></script>
+    <script src="/js/editor/editMessageControllers.js"></script>
+
 </head>
 <style>
 
@@ -172,6 +178,9 @@
                     <a class="navbar-brand" href="#">Plan zajęć</a>
                 </div>
                 <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/logout"> Wyloguj</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -181,6 +190,7 @@
                 <li role="presentation" ng-class="isAddEventPage() ? 'active' : ''"><a href="#/dodaj/wydarzenie">Dodaj wydarzenie</a></li>
                 <li role="presentation" ng-class="isRoomsPage() ? 'active' : ''" ><a href="#/pokoje">Wszystkie pokoje</a></li>
                 <li role="presentation" ng-class="isAddRoomPage() ? 'active' : ''"><a href="#/dodaj/pokoj">Dodaj pokoj</a></li>
+                <li role="presentation" ng-class="isAddTeacherPage() ? 'active' : ''"><a href="#/dodaj/nauczyciela">Dodaj nauczyciela</a></li>
             </ul>
         </div>
         <div class="col-md-10">

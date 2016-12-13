@@ -1,11 +1,13 @@
 package pl.labelingRooms.web.controller;
 
+import org.omg.CORBA.Object;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import pl.labelingRooms.model.DataWrapper;
 import pl.labelingRooms.model.InvalidDataException;
 import pl.labelingRooms.model.Status;
 import pl.labelingRooms.service.AbstractService;
@@ -65,6 +67,14 @@ abstract public class AbstractController<DBO, DTO, S extends AbstractService<DBO
             return new Status(((InvalidDataException) e).getReason(), false);
         }
         return new Status("Wystąpił problem", false);
+
+    }
+
+    protected <T> DataWrapper<T> handleDataException(Exception e) {
+        if (e instanceof InvalidDataException) {
+            return new DataWrapper<T>(((InvalidDataException) e).getReason(), null);
+        }
+        return new DataWrapper<T>("Wystąpił problem",null);
 
     }
 }

@@ -19,6 +19,7 @@ import java.util.List;
  */
 @Service
 public class EventService extends AbstractService<Event, EventDto, EventRepository, EventMapper> {
+
     @Autowired
     private EventValidator eventValidator;
 
@@ -29,7 +30,7 @@ public class EventService extends AbstractService<Event, EventDto, EventReposito
     }
 
     public DataWrapper<List<EventDto>> getEventsDataByTeacher(Teacher teacher) {
-        return new DataWrapper<>(null, mapper.convertToDTO((List<Event>) repo.findAll()));
+        return new DataWrapper<>(null, mapper.convertToDTO((repo.findByTeacher(teacher))));
     }
 
     @Override

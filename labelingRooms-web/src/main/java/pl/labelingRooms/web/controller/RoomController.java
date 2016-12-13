@@ -49,4 +49,24 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
             return handleException(e);
         }
     }
+
+    @RequestMapping("/{roomId}/assign")
+    public Status assignRoom(@PathVariable Long roomId){
+        try {
+            service.assignRoom(roomId);
+            return new Status("", true);
+        } catch (Exception e) {
+            return handleException(e);
+        }
+    }
+
+    @RequestMapping("/{roomId}/exit")
+    public Status exitRoom(@PathVariable Long roomId){
+        try {
+            service.exitRoom(roomId);
+            return new Status("", true);
+        } catch (Exception e) {
+            return handleException(e);
+        }
+    }
 }

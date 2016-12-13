@@ -12,6 +12,6 @@ public class EventValidator extends AbstractValidator<EventDto> {
     @Override
     public void validate(EventDto eventDto) throws InvalidDataException {
         validateNotNull(eventDto);
-        validateAllFieldNotNull(eventDto,"id");
+        validateAllFieldNotNull(eventDto,"id","week");
     }
 }

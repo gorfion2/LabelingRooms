@@ -25,6 +25,12 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
             }
         };
 
+        $scope.roomUtils.setLabColor = function (style) {
+            if ($scope.room.labelColor !== undefined) {
+                style['background-color'] = $scope.room.labColor;
+            }
+        };
+
 
         $scope.hourColumn = {
             width: 10,
@@ -53,7 +59,7 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
         };
 
         $scope.day = {
-            names: ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek"],
+            names: ["Poniedziałek","Poniedziałek n", "Wtorek","Wtorek n", "Środa", "Środa n", "Czwartek", "Czwartek n", "Piątek" , "Piątek n"],
             height: 10,
             getStyle: function (index) {
                 $scope.tempStyle = {};
@@ -87,6 +93,7 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
             getStyle: function (startHour, startMinute, endHour, endMinute) {
                 $scope.tempStyle = {};
                 $scope.tempStyle['background-color'] = 'red';
+                $scope.roomUtils.setLabColor($scope.tempStyle);
                 $scope.tempStyle.width = "100%";
                 $scope.roomUtils.setBorderColor($scope.tempStyle);
                 var startTimeDecimal = ( startHour - $scope.hourColumn.startHour + startMinute / 60);
@@ -104,6 +111,7 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
 
                 $scope.tempStyle.top = (startTimeDecimal / $scope.hourColumn.getSize()) * (100 - $scope.day.height) + $scope.day.height + "%";
                 $scope.tempStyle.height = ((100 - $scope.day.height) / $scope.hourColumn.getSize()) * durationDecimal + "%";
+                // $scope.tempStyle['line-height'] = '100px';
                 return $scope.tempStyle;
             }
         };

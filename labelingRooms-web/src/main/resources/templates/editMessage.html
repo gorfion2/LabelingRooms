@@ -1,0 +1,33 @@
+<div class="container">
+    {{message}}
+    <form class="form-horizontal" name="messageForm">
+        <div ng-class="messageForm.rooms.$valid ?  'form-group': 'form-group has-error has-feedback'">
+            <div ng-class="messageForm.messageText.$valid ?  'form-group': 'form-group has-error has-feedback'">
+                <label class="control-label col-sm-3" for="messageText">Treść:</label>
+                <div class="col-sm-5">
+                <textarea name="messageText" ng-model="message.messageText" class="form-control" id="messageText"
+                          required></textarea>
+                </div>
+            </div>
+            <label class="control-label col-sm-3" for="rooms">Pokoje:</label>
+            <div class="col-sm-5">
+                <input ng-pattern="roomsRegex" name="rooms" ng-model="message.rooms" class="form-control" id="rooms" type="text" placeholder="np. 903, 102, 193"
+                       required>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button ng-disabled="!(messageForm.name.$valid)"
+                        ng-show="editAction" ng-click="save()"
+                        type="submit" class="btn btn-default">Edytuj
+                </button>
+                <button ng-disabled="!(messageForm.name.$valid )"
+                        ng-hide="editAction" ng-click="save()"
+                        type="submit" class="btn btn-default">Dodaj
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -29,6 +29,9 @@ public class Event {
     @ManyToOne
     private Room room;
 
+    @ManyToOne
+    private Teacher teacher;
+
     public long getId() {
         return id;
     }
@@ -99,5 +102,13 @@ public class Event {
 
     public void setRoom(Room room) {
         this.room = room;
+    }
+
+    public Teacher getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
     }
 }

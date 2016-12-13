@@ -14,8 +14,12 @@ public class Teacher {
     private long id;
     private String name;
     private String surname;
+    private String username;
     @ManyToMany(mappedBy = "teacherList")
     private List<Room> roomList;
+
+    @OneToMany(mappedBy = "teacher")
+    private List<Event> events;
 
     public long getId() {
         return id;
@@ -41,11 +45,50 @@ public class Teacher {
         this.surname = surname;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public List<Room> getRoomList() {
         return roomList;
     }
 
     public void setRoomList(List<Room> roomList) {
         this.roomList = roomList;
+    }
+
+    public List<Event> getEvents() {
+        return events;
+    }
+
+    public void setEvents(List<Event> events) {
+        this.events = events;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Teacher teacher = (Teacher) o;
+
+        if (id != teacher.id) return false;
+        if (!name.equals(teacher.name)) return false;
+        if (!surname.equals(teacher.surname)) return false;
+        return username.equals(teacher.username);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (int) (id ^ (id >>> 32));
+        result = 31 * result + name.hashCode();
+        result = 31 * result + surname.hashCode();
+        result = 31 * result + username.hashCode();
+        return result;
     }
 }
