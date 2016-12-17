@@ -12,7 +12,7 @@
 
     <artifactId>labelingRooms-web</artifactId>
 
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <start-class>pl.labelingRooms.web.Application</start-class>
@@ -49,8 +49,6 @@
         </dependency>
 
 
-
-
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
@@ -85,7 +83,10 @@
                     </configuration>
                 </plugin>
             </plugins>
+
+
         </pluginManagement>
+        
     </build>
 
 </project>

@@ -12,6 +12,11 @@ scheduleServicesModule.factory('IndexService', [
                 method: 'GET',
                 url: '../../room/:id/events',
                 isArray: true
+            }, getMessages: {
+                params: {id: "@id"},
+                method: 'GET',
+                url: '../../room/:id/messages',
+                isArray: true
             },
             getRoom: {
                 params: {id: "@id"},

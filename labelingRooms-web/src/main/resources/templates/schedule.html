@@ -74,20 +74,21 @@
     }
 
 </style>
-<body ng-app="scheduleModule">
+<body ng-app="scheduleModule" ng-controller="scheduleController">
 <div class="row" style="width: 100%; margin: 0">
     <div class="col-sm-2" style="font-size: 70%">
         <div class="panel panel-default" style="height: 95%">
-            <div class="panel-body" >A Basic Panel</div>
+            <div class="panel-body">A Basic Panel</div>
 
-            <div class="panel panel-default" style="margin-left: 2%; margin-right: 2%">
-                <div class="panel-heading">Wiadomość od paweł nowak</div>
-                <div class="panel-body">Dzisiejsze zajęcia są odwołane </div>
+            <div ng-repeat="message in messages" class="panel panel-default"
+                 style="margin-left: 2%; margin-right: 2%; word-wrap: break-word">
+                <div class="panel-heading">{{message.teacherName}} {{message.date}}</div>
+                <div class="panel-body">{{message.messageText}}</div>
             </div>
         </div>
     </div>
     <div class="col-sm-10">
-        <div class="mainDiv" ng-controller="scheduleController">
+        <div class="mainDiv">
             <div class="dayLabel" ng-repeat="name in day.names" ng-style="day.getStyle($index)"
                  ng-init="eventFilter.weekDay=name">
                 <div style="height: 10%">

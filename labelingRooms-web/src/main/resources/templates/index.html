@@ -29,6 +29,8 @@
     <script src="/js/editor/editMessageServices.js"></script>
     <script src="/js/editor/editMessageControllers.js"></script>
 
+    <script src="/js/editor/messagesServices.js"></script>
+    <script src="/js/editor/messagesControllers.js"></script>
 </head>
 <style>
 
@@ -160,7 +162,8 @@
     .nav > li > a, .nav > li > a:hover, .nav > li > a:focus {
         color: #9b59b6;
     }
-    #left-navbar{
+
+    #left-navbar {
         border-color: #9b59b6;
         border-style: solid;
         border-width: 1px;
@@ -186,11 +189,19 @@
 
         <div class="col-md-2" ng-controller="NavbarController">
             <ul class="nav nav-pills nav-stacked" id="left-navbar">
-                <li role="presentation" ng-class="isEventsPage() ? 'active' : ''"><a href="#/">Wszystkie wydarzenia</a></li>
-                <li role="presentation" ng-class="isAddEventPage() ? 'active' : ''"><a href="#/dodaj/wydarzenie">Dodaj wydarzenie</a></li>
-                <li role="presentation" ng-class="isRoomsPage() ? 'active' : ''" ><a href="#/pokoje">Wszystkie pokoje</a></li>
-                <li role="presentation" ng-class="isAddRoomPage() ? 'active' : ''"><a href="#/dodaj/pokoj">Dodaj pokoj</a></li>
-                <li role="presentation" ng-class="isAddTeacherPage() ? 'active' : ''"><a href="#/dodaj/nauczyciela">Dodaj nauczyciela</a></li>
+                <li role="presentation" ng-class="isEventsPage() ? 'active' : ''"><a href="#/">Moje wydarzenia</a></li>
+                <li role="presentation" ng-class="isAddEventPage() ? 'active' : ''"><a href="#/dodaj/wydarzenie">Dodaj
+                    wydarzenie</a></li>
+                <li role="presentation" ng-class="isMessagePage() ? 'active' : ''"><a href="#/wiadomosci">Moje
+                    wiadomosci</a></li>
+                <li role="presentation" ng-class="isAddMessagePage() ? 'active' : ''"><a href="#/dodaj/wiadomosc">Dodaj
+                    wiadomosc</a></li>
+                <li role="presentation" ng-class="isRoomsPage() ? 'active' : ''"><a href="#/pokoje">Wszystkie pokoje</a>
+                </li>
+                <li role="presentation" ng-class="isAddRoomPage() ? 'active' : ''"><a href="#/dodaj/pokoj">Dodaj
+                    pokoj</a></li>
+                <li role="presentation" ng-class="isAddTeacherPage() ? 'active' : ''"><a href="#/dodaj/nauczyciela">Dodaj
+                    nauczyciela</a></li>
             </ul>
         </div>
         <div class="col-md-10">

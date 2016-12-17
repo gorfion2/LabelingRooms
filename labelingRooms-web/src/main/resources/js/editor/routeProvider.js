@@ -3,7 +3,7 @@
  */
 var mainApp = angular.module("mainApp", ['ngRoute', 'EventsModule', 'EventsServicesModule', 'EditEventModule', 'EditEventServicesModule'
     , 'RoomsServicesModule', 'RoomsModule', 'EditRoomServicesModule', 'EditRoomModule', "EditTeacherServicesModule", 'EditTeacherModule'
-    , "EditMessageServicesModule", 'EditMessageModule']);
+    , "EditMessageServicesModule", 'EditMessageModule', 'MessagesServicesModule', 'MessagesModule']);
 mainApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: '/templates/events.html',
@@ -36,9 +36,17 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
             templateUrl: '/templates/editTeacher.html',
             controller: 'EditTeacherController'
         }
+    ).when('/dodaj/wiadomosc', {
+            templateUrl: '/templates/editMessage.html',
+            controller: 'EditMessageController'
+        }
     ).when('/edytuj/wiadomosc', {
             templateUrl: '/templates/editMessage.html',
             controller: 'EditMessageController'
+        }
+    ).when('/wiadomosci', {
+            templateUrl: '/templates/messages.html',
+            controller: 'MessagesController'
         }
     ).otherwise({
         redirectTo: '/'
@@ -62,6 +70,12 @@ mainApp.controller('NavbarController', ['$scope', '$location', function ($scope,
     };
     $scope.isAddTeacherPage = function () {
         return $location.path() === '/dodaj/nauczyciela';
+    };
+    $scope.isAddMessagePage = function () {
+        return $location.path() === '/dodaj/wiadomosc';
+    };
+    $scope.isMessagePage = function () {
+        return $location.path() === '/wiadomosci';
     };
 }]);
 

@@ -59,7 +59,7 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
         };
 
         $scope.day = {
-            names: ["Poniedziałek","Poniedziałek n", "Wtorek","Wtorek n", "Środa", "Środa n", "Czwartek", "Czwartek n", "Piątek" , "Piątek n"],
+            names: ["Poniedziałek", "Poniedziałek n", "Wtorek", "Wtorek n", "Środa", "Środa n", "Czwartek", "Czwartek n", "Piątek", "Piątek n"],
             height: 10,
             getStyle: function (index) {
                 $scope.tempStyle = {};
@@ -92,7 +92,6 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
         $scope.eventUtils = {
             getStyle: function (startHour, startMinute, endHour, endMinute) {
                 $scope.tempStyle = {};
-                $scope.tempStyle['background-color'] = 'red';
                 $scope.roomUtils.setLabColor($scope.tempStyle);
                 $scope.tempStyle.width = "100%";
                 $scope.roomUtils.setBorderColor($scope.tempStyle);
@@ -118,6 +117,7 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
         $scope.roomId = $location.search();
         $scope.events = [];
         $scope.room = {};
+        $scope.messages = [];
 
 
         $scope.reloadData = function () {
@@ -130,6 +130,9 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
                 $scope.events.forEach(function (event) {
                     event.style = $scope.eventUtils.getStyle(event.startHour, event.startMinute, event.endHour, event.endMinute);
                 })
+            });
+            IndexService.getMessages({id: roomId}, function (messages) {
+                $scope.messages = messages;
             });
             IndexService.getRoom({id: roomId}, function (room) {
                 $scope.room = room;

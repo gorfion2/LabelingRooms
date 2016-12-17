@@ -7,7 +7,7 @@ var editMessageModule = angular.module(
 editMessageModule.controller('EditMessageController', ['$scope', '$location', 'EditMessageRepository', 'EditMessageService', function ($scope, $location, EditMessageRepository, EditMessageService) {
 
     $scope.editAction = $location.path() === '/edytuj/wiadomosc';
-    $scope.roomsRegex = '^(\\d{1,3})(, *\\d{1,3})*$';
+    $scope.roomsRegex = '^\\d{1,3}$';
 
     $scope.save = function () {
         EditMessageRepository.saveMessage($scope.message, function (status) {

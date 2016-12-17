@@ -1,0 +1,30 @@
+<style>
+    #textColumn {
+        width: 50%;
+        word-wrap: break-word;
+    }
+</style>
+<h2>Moje wiadomosci:</h2>
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>Sala<br><input class="form-control" type="text" ng-model="messageFilters.roomNumber"/></th>
+        <th>Data<br><input class="form-control" type="text" ng-model="messageFilters.date"/></th>
+        <th id="textColumn">Treść<br><input class="form-control" type="text" ng-model="messageFilters.messageText"/>
+        </th>
+        <th>Opcje</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr ng-repeat="message in messages| filter:messageFilters">
+        <td>{{message.roomNumber}}</td>
+        <td>{{message.date}}</td>
+        <td>{{message.messageText}}</td>
+        <td><span class="glyphicon glyphicon-pencil" ng-click="editMessage(message)"></span>
+            <span class="glyphicon glyphicon-remove" ng-click="removeMessage(message)"></span>
+        </td>
+    </tr>
+    </tbody>
+
+</table>
