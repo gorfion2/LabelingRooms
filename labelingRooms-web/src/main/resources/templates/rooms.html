@@ -24,8 +24,10 @@
         <td>{{room.number}}</td>
         <td>typ</td>
         <td> {{room.owners}}</td>
-        <td><span  ng-hide="room.yourRoom" class="glyphicon glyphicon-home" ng-click="assignRoom(room)"></span>
-            <span ng-show="room.yourRoom" class="glyphicon glyphicon-share-alt" ng-click="exitRoom(room)"></span>
+        <td><span ng-hide="room.yourRoom || !room.teacherRoom" class="glyphicon glyphicon-home"
+                  ng-click="assignRoom(room)"></span>
+            <span ng-show="room.yourRoom && room.teacherRoom " class="glyphicon glyphicon-share-alt"
+                  ng-click="exitRoom(room)"></span>
             <span class="glyphicon glyphicon-pencil" ng-click="editRoom(room)"></span>
             <span class="glyphicon glyphicon-remove" ng-click="removeRoom(room)"></span>
         </td>

@@ -1,9 +1,9 @@
 package pl.labelingRooms.service;
 
-import pl.labelingRooms.model.InvalidDataException;
-import pl.labelingRooms.service.mapper.AbstractMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
+import pl.labelingRooms.model.InvalidDataException;
+import pl.labelingRooms.service.mapper.AbstractMapper;
 
 import java.util.List;
 
@@ -20,7 +20,10 @@ abstract public class AbstractService<DBO, DTO, R extends CrudRepository<DBO, Lo
     M mapper;
 
     public DTO findOne(Long id) {
-        return mapper.convertToDTO(repo.findOne(id));
+        DBO dbo = repo.findOne(id);
+        if (dbo == null)
+            return null;
+        return mapper.convertToDTO(dbo);
     }
 
     public DBO findOneDBO(Long id) {

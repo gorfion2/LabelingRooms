@@ -10,6 +10,7 @@ import pl.labelingRooms.model.dto.MessageDto;
 import pl.labelingRooms.repo.MessageRepository;
 import pl.labelingRooms.service.mapper.MessageMapper;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -36,5 +37,13 @@ public class MessageService extends AbstractService<Message, MessageDto, Message
 
     public DataWrapper<List<MessageDto>> getMessagesByTeacher(Teacher loggedTeacher) {
         return new DataWrapper<>(null, mapper.convertToDTO((repo.findByTeacher(loggedTeacher))));
+    }
+
+    public List<MessageDto> getMessagesByTeachers(List<Teacher> teacherList) {
+        ArrayList<MessageDto> messageDtos = new ArrayList<>();
+        for (Teacher teacher : teacherList) {
+            messageDtos.addAll(mapper.convertToDTO((repo.findByTeacher(teacher))));
+        }
+        return messageDtos;
     }
 }

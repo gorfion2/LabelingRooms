@@ -14,6 +14,7 @@ public class EventDto {
     private int endHour;
     private int endMinute;
     private int roomId;
+    private String teacherName;
 
     public String getTitle() {
         return title;
@@ -85,5 +86,13 @@ public class EventDto {
 
     public void setRoomId(int roomId) {
         this.roomId = roomId;
+    }
+
+    public String getTeacherName() {
+        return teacherName;
+    }
+
+    public void setTeacherName(String teacherName) {
+        this.teacherName = teacherName;
     }
 }

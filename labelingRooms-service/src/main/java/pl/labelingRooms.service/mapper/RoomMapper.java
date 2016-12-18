@@ -9,6 +9,7 @@ import pl.labelingRooms.model.dto.RoomDto;
 import pl.labelingRooms.repo.RoomRepository;
 import pl.labelingRooms.service.TeacherService;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -34,6 +35,13 @@ public class RoomMapper extends AbstractMapper<Room, RoomDto> {
         room.setBorderColor(roomDto.getBorderColor());
         room.setLabColor(roomDto.getLabColor());
         room.setLabelColor(roomDto.getLabelColor());
+        room.setTeacherRoom(roomDto.isTeacherRoom());
+        room.setTitle(roomDto.getTitle());
+        room.setMessageFontSize(roomDto.getMessageFontSize());
+        room.setEventFontSize(roomDto.getEventFontSize());
+        if (!room.getTeacherRoom()) {
+            room.setTeacherList(new ArrayList<>());
+        }
         return room;
     }
 
@@ -46,6 +54,10 @@ public class RoomMapper extends AbstractMapper<Room, RoomDto> {
         roomDto.setLabColor(room.getLabColor());
         roomDto.setLabelColor(room.getLabelColor());
         roomDto.setTeacherNameList(generateTeacherNameList(room.getTeacherList()));
+        roomDto.setTeacherRoom(room.getTeacherRoom());
+        roomDto.setTitle(room.getTitle());
+        roomDto.setMessageFontSize(room.getMessageFontSize());
+        roomDto.setEventFontSize(room.getEventFontSize());
         try {
             roomDto.setYourRoom(room.getTeacherList().contains(teacherService.getLoggedTeacher()));
         } catch (InvalidDataException e) {

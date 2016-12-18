@@ -31,6 +31,22 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
             }
         };
 
+        $scope.roomUtils.getMessageFontSizeStyle = function () {
+            var style = {};
+            if ($scope.room.messageFontSize !== undefined) {
+                style['font-size'] = $scope.room.messageFontSize + '%';
+            }
+            return style;
+        };
+
+        $scope.roomUtils.getEventFontSizeStyle = function () {
+            var style = {};
+            if ($scope.room.eventFontSize !== undefined) {
+                style['font-size'] = $scope.room.eventFontSize + '%';
+            }
+            return style;
+        };
+
 
         $scope.hourColumn = {
             width: 10,
@@ -59,8 +75,8 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
         };
 
         $scope.day = {
-            names: ["Poniedziałek", "Poniedziałek n", "Wtorek", "Wtorek n", "Środa", "Środa n", "Czwartek", "Czwartek n", "Piątek", "Piątek n"],
-            height: 10,
+            names: ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"],
+            height: 7,
             getStyle: function (index) {
                 $scope.tempStyle = {};
                 $scope.roomUtils.setBorderColor($scope.tempStyle);
@@ -114,8 +130,11 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
                 return $scope.tempStyle;
             }
         };
+
         $scope.roomId = $location.search();
         $scope.events = [];
+        $scope.eventWrappers = [];
+        $scope.eventWrapperIndex = 0;
         $scope.room = {};
         $scope.messages = [];
 
@@ -125,11 +144,8 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
             if (roomId === undefined || roomId === null || roomId === 0)
                 return;
 
-            IndexService.getEvents({id: roomId}, function (events) {
-                $scope.events = events;
-                $scope.events.forEach(function (event) {
-                    event.style = $scope.eventUtils.getStyle(event.startHour, event.startMinute, event.endHour, event.endMinute);
-                })
+            IndexService.getEvents({id: roomId}, function (eventsWrappers) {
+                $scope.eventWrappers = eventsWrappers;
             });
             IndexService.getMessages({id: roomId}, function (messages) {
                 $scope.messages = messages;
@@ -138,6 +154,24 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
                 $scope.room = room;
             });
         };
+
+        $scope.changeEvent = function () {
+            if ($scope.eventWrappers.length != 0) {
+                $scope.eventWrapperIndex++;
+                if ($scope.eventWrapperIndex >= $scope.eventWrappers.length)
+                    $scope.eventWrapperIndex = 0;
+                $scope.events = $scope.eventWrappers[$scope.eventWrapperIndex].eventDtos;
+                $scope.day.names = $scope.eventWrappers[$scope.eventWrapperIndex].dayNames;
+                $scope.events.forEach(function (event) {
+                    event.style = $scope.eventUtils.getStyle(event.startHour, event.startMinute, event.endHour, event.endMinute);
+                });
+            }
+        }
+
         $scope.reloadData();
+        $scope.changeEvent();
         $interval($scope.reloadData, 5000);
+        $interval($scope.changeEvent, 5000);
+
+
     }]);

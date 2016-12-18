@@ -1,3 +1,8 @@
+<style>
+    #teacherRoom {
+        margin-left: -45%;
+    }
+</style>
 <div class="container">
     {{room}}
     <form class="form-horizontal" name="roomForm">
@@ -9,6 +14,39 @@
                        class="form-control"
                        id="room"
                        placeholder="np. 903" required>
+            </div>
+        </div>
+        <div ng-class="roomForm.title.$valid ?  'form-group': 'form-group has-error has-feedback'">
+            <label class="control-label col-sm-3" for="room">Tytuł:</label>
+            <div class="col-sm-5">
+                <input name="title" ng-model="room.title" type="text"
+                       class="form-control"
+                       id="title"
+                       placeholder="np. Pokój 903" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="room">Pokój konsultacji:</label>
+            <div class="col-sm-5">
+                <input name="teacherRoom" ng-model="room.teacherRoom" type="checkbox"
+                       class="form-control"
+                       id="teacherRoom">
+            </div>
+        </div>
+        <div ng-class="roomForm.eventFontSize.$valid ?  'form-group': 'form-group has-error has-feedback'">
+            <label class="control-label col-sm-3" for="room">Wielkość trzcionki wydarzeń:</label>
+            <div class="col-sm-5">
+                <input name="eventFontSize" ng-model="room.eventFontSize" type="number"
+                       class="form-control"
+                       id="eventFontSize" required>
+            </div>
+        </div>
+        <div ng-class="roomForm.messageFontSize.$valid ?  'form-group': 'form-group has-error has-feedback'">
+            <label class="control-label col-sm-3" for="room">Wielkość trzcionki wiadomości:</label>
+            <div class="col-sm-5">
+                <input name="messageFontSize" ng-model="room.messageFontSize" type="number"
+                       class="form-control"
+                       id="messageFontSize" required>
             </div>
         </div>
         <div ng-class="roomForm.labColor.$valid ?  'form-group': 'form-group has-error has-feedback'">
@@ -41,11 +79,11 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button ng-disabled="!(roomForm.number.$valid)"
+                <button ng-disabled="!(roomForm.number.$valid && roomForm.title.$valid)"
                         ng-show="editAction" ng-click="edit()"
                         type="button" class="btn btn-default">Edytuj
                 </button>
-                <button ng-disabled="!(roomForm.number.$valid )"
+                <button ng-disabled="!(roomForm.number.$valid && roomForm.title.$valid)"
                         ng-hide="editAction" ng-click="save()"
                         type="button" class="btn btn-default">Dodaj
                 </button>

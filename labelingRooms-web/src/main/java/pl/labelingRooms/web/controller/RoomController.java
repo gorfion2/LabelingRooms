@@ -6,16 +6,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.labelingRooms.model.DataWrapper;
+import pl.labelingRooms.model.EventWrapper;
 import pl.labelingRooms.model.Status;
-import pl.labelingRooms.model.dbo.Message;
 import pl.labelingRooms.model.dbo.Room;
-import pl.labelingRooms.model.dto.EventDto;
 import pl.labelingRooms.model.dto.MessageDto;
 import pl.labelingRooms.model.dto.RoomDto;
 import pl.labelingRooms.service.EventService;
 import pl.labelingRooms.service.MessageService;
 import pl.labelingRooms.service.RoomService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,12 +32,27 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
 
     @RequestMapping("/{roomId}/messages")
     public List<MessageDto> getMessageByRoom(@PathVariable Long roomId) {
-        return messageService.getMessagesByRoom(service.findOneDBO(roomId));
+        Room room = service.findOneDBO(roomId);
+        if (room == null)
+            return new ArrayList<>();
+        if (!room.getTeacherRoom()) {
+            return messageService.getMessagesByRoom(room);
+        } else {
+            return messageService.getMessagesByTeachers(room.getTeacherList());
+        }
     }
 
     @RequestMapping("/{roomId}/events")
-    public List<EventDto> getEventByRoom(@PathVariable Long roomId) {
-        return eventService.getEventsByRoom(service.findOneDBO(roomId));
+    public List<EventWrapper> getEventByRoom(@PathVariable Long roomId) {
+        Room room = service.findOneDBO(roomId);
+        if (room == null)
+            return new ArrayList<>();
+        if (!room.getTeacherRoom()) {
+            return eventService.getEventsByRoom(room);
+        } else {
+//            return eventService.getEventsDataByTeachers(room.getTeacherList());
+        }
+        return null;
     }
 
     @RequestMapping("/all")
@@ -62,7 +77,7 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
     }
 
     @RequestMapping("/{roomId}/assign")
-    public Status assignRoom(@PathVariable Long roomId){
+    public Status assignRoom(@PathVariable Long roomId) {
         try {
             service.assignRoom(roomId);
             return new Status("", true);
@@ -72,7 +87,7 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
     }
 
     @RequestMapping("/{roomId}/exit")
-    public Status exitRoom(@PathVariable Long roomId){
+    public Status exitRoom(@PathVariable Long roomId) {
         try {
             service.exitRoom(roomId);
             return new Status("", true);

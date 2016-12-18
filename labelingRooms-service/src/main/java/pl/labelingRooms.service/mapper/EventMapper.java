@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pl.labelingRooms.model.InvalidDataException;
 import pl.labelingRooms.model.WeekDay;
+import pl.labelingRooms.model.WeekType;
 import pl.labelingRooms.model.dbo.Event;
 import pl.labelingRooms.model.dto.EventDto;
 import pl.labelingRooms.service.RoomService;
@@ -36,6 +37,7 @@ public class EventMapper extends AbstractMapper<Event, EventDto> {
         event.setStartMinute(eventDto.getStartMinute());
         event.setTitle(eventDto.getTitle());
         event.setWeekDay(WeekDay.getValue(eventDto.getWeekDay()));
+        event.setWeekType(WeekType.getValue(eventDto.getWeek()));
         event.setRoom(roomService.findOneDBO((long) eventDto.getRoomId()));
         try {
             event.setTeacher(teacherService.getLoggedTeacher());
@@ -65,8 +67,14 @@ public class EventMapper extends AbstractMapper<Event, EventDto> {
         eventDto.setEndMinute(endMinute);
         eventDto.setTitle(event.getTitle());
         eventDto.setWeekDay(event.getWeekDay().getName());
+        eventDto.setWeek(event.getWeekType().getName());
         eventDto.setRoomId(event.getRoom().getNumber().intValue());
+        eventDto.setTeacherName(generateTeacherName(event));
         return eventDto;
+    }
+
+    private String generateTeacherName(Event event) {
+        return new StringBuilder(event.getTeacher().getName().substring(0, 2)).append(" ").append(event.getTeacher().getSurname().substring(0, 2)).toString();
     }
 
     private void prepareEndHour(int startHour, int startMinute, int duration) {

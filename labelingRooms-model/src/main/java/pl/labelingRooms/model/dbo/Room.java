@@ -15,12 +15,16 @@ public class Room {
     private String labelColor;
     private String borderColor;
     private String backgroundColor;
+    private Boolean teacherRoom;
+    private String title;
+    private Integer eventFontSize;
+    private Integer messageFontSize;
 
 
     @OneToMany(mappedBy = "room")
     private List<Event> eventList;
     @ManyToMany
-    @JoinTable(name = "teacher_room",joinColumns = {@JoinColumn(name = "room_id")},inverseJoinColumns = {@JoinColumn(name = "teacher_id")})
+    @JoinTable(name = "teacher_room", joinColumns = {@JoinColumn(name = "room_id")}, inverseJoinColumns = {@JoinColumn(name = "teacher_id")})
     private List<Teacher> teacherList;
 
     public Long getNumber() {
@@ -77,5 +81,37 @@ public class Room {
 
     public void setTeacherList(List<Teacher> teacherList) {
         this.teacherList = teacherList;
+    }
+
+    public Boolean getTeacherRoom() {
+        return teacherRoom;
+    }
+
+    public void setTeacherRoom(Boolean teacherRoom) {
+        this.teacherRoom = teacherRoom;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Integer getEventFontSize() {
+        return eventFontSize;
+    }
+
+    public void setEventFontSize(Integer eventFontSize) {
+        this.eventFontSize = eventFontSize;
+    }
+
+    public Integer getMessageFontSize() {
+        return messageFontSize;
+    }
+
+    public void setMessageFontSize(Integer messageFontSize) {
+        this.messageFontSize = messageFontSize;
     }
 }

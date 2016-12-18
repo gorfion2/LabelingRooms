@@ -12,7 +12,11 @@ public class RoomDto {
     private String borderColor;
     private String backgroundColor;
     private boolean yourRoom;
+    private boolean teacherRoom;
     private List<String> teacherNameList;
+    private String title;
+    private Integer eventFontSize;
+    private Integer messageFontSize;
 
     public Long getNumber() {
         return number;
@@ -68,5 +72,37 @@ public class RoomDto {
 
     public void setYourRoom(boolean yourRoom) {
         this.yourRoom = yourRoom;
+    }
+
+    public boolean isTeacherRoom() {
+        return teacherRoom;
+    }
+
+    public void setTeacherRoom(boolean teacherRoom) {
+        this.teacherRoom = teacherRoom;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Integer getEventFontSize() {
+        return eventFontSize;
+    }
+
+    public void setEventFontSize(Integer eventFontSize) {
+        this.eventFontSize = eventFontSize;
+    }
+
+    public Integer getMessageFontSize() {
+        return messageFontSize;
+    }
+
+    public void setMessageFontSize(Integer messageFontSize) {
+        this.messageFontSize = messageFontSize;
     }
 }
