@@ -19,7 +19,7 @@ public class CustomCommandLineRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         int numberOfTeacher = teacherService.findAll().size();
         if (numberOfTeacher == 0) {
-            teacherService.save(new UserDto(1L, "admin", "admin1", "admin", ""));
+            teacherService.save(new UserDto(1L, "admin", "admin1", "admin", "admin"));
         }
     }
 }

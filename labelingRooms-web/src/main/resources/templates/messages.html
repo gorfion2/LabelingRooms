@@ -10,7 +10,7 @@
     <tr>
         <th>Sala<br><input class="form-control" type="text" ng-model="messageFilters.roomNumber"/></th>
         <th>Data<br><input class="form-control" type="text" ng-model="messageFilters.date"/></th>
-        <th id="textColumn">Treść<br><input class="form-control" type="text" ng-model="messageFilters.messageText"/>
+        <th id="textColumn">Treść<br><input class="form-control" type="text" ng-model="messageFilters.shortMessageText"/>
         </th>
         <th>Opcje</th>
     </tr>
@@ -20,7 +20,7 @@
     <tr ng-repeat="message in messages| filter:messageFilters">
         <td>{{message.roomNumber}}</td>
         <td>{{message.date}}</td>
-        <td>{{message.messageText}}</td>
+        <td>{{message.shortMessageText}}</td>
         <td><span class="glyphicon glyphicon-pencil" ng-click="editMessage(message)"></span>
             <span class="glyphicon glyphicon-remove" ng-click="removeMessage(message)"></span>
         </td>

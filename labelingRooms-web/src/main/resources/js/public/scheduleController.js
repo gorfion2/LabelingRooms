@@ -39,12 +39,10 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
             return style;
         };
 
-        $scope.roomUtils.getEventFontSizeStyle = function () {
-            var style = {};
+        $scope.roomUtils.setEventFontSizeStyle = function (style) {
             if ($scope.room.eventFontSize !== undefined) {
                 style['font-size'] = $scope.room.eventFontSize + '%';
             }
-            return style;
         };
 
 
@@ -111,6 +109,7 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
                 $scope.roomUtils.setLabColor($scope.tempStyle);
                 $scope.tempStyle.width = "100%";
                 $scope.roomUtils.setBorderColor($scope.tempStyle);
+                $scope.roomUtils.setEventFontSizeStyle($scope.tempStyle);
                 var startTimeDecimal = ( startHour - $scope.hourColumn.startHour + startMinute / 60);
                 if (startMinute > endMinute) {
                     endMinute += 60;
@@ -137,21 +136,28 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
         $scope.eventWrapperIndex = 0;
         $scope.room = {};
         $scope.messages = [];
+        $scope.title = "";
+        $scope.actualDataVersion;
 
 
         $scope.reloadData = function () {
-            var roomId = $location.path().slice(1, 4);
-            if (roomId === undefined || roomId === null || roomId === 0)
-                return;
+            IndexService.getDataVersion(function (wrapper) {
+                if ($scope.actualDataVersion !== wrapper.data) {
+                    $scope.actualDataVersion = wrapper.data
+                    var roomId = $location.path().slice(1, 4);
+                    if (roomId === undefined || roomId === null || roomId === 0)
+                        return;
 
-            IndexService.getEvents({id: roomId}, function (eventsWrappers) {
-                $scope.eventWrappers = eventsWrappers;
-            });
-            IndexService.getMessages({id: roomId}, function (messages) {
-                $scope.messages = messages;
-            });
-            IndexService.getRoom({id: roomId}, function (room) {
-                $scope.room = room;
+                    IndexService.getEvents({id: roomId}, function (eventsWrappers) {
+                        $scope.eventWrappers = eventsWrappers;
+                    });
+                    IndexService.getMessages({id: roomId}, function (messages) {
+                        $scope.messages = messages;
+                    });
+                    IndexService.getRoom({id: roomId}, function (room) {
+                        $scope.room = room;
+                    });
+                }
             });
         };
 
@@ -162,6 +168,7 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
                     $scope.eventWrapperIndex = 0;
                 $scope.events = $scope.eventWrappers[$scope.eventWrapperIndex].eventDtos;
                 $scope.day.names = $scope.eventWrappers[$scope.eventWrapperIndex].dayNames;
+                $scope.title = $scope.eventWrappers[$scope.eventWrapperIndex].title;
                 $scope.events.forEach(function (event) {
                     event.style = $scope.eventUtils.getStyle(event.startHour, event.startMinute, event.endHour, event.endMinute);
                 });

@@ -10,6 +10,7 @@ import java.util.List;
 public class EventWrapper {
     public List<EventDto> eventDtos;
     public List<String> dayNames;
+    public String title;
 
     public EventWrapper(List<EventDto> eventDtos, List<String> dayNames) {
         this.eventDtos = eventDtos;

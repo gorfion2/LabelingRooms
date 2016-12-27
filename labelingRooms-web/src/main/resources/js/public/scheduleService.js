@@ -21,7 +21,11 @@ scheduleServicesModule.factory('IndexService', [
             getRoom: {
                 params: {id: "@id"},
                 method: 'GET',
-                url: '../../room/:id',
+                url: '../../room/:id/public',
+            },
+            getDataVersion: {
+                method: 'GET',
+                url: '../../data/version'
             }
         });
     }]);

@@ -19,10 +19,10 @@
         border-width: 1px;
         position: relative;
         width: 100%;
-        height: 92%;
+        height: 90%;
         margin: 0;
         /*font-family: "Century Gothic";*/
-        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        /*font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     }
 
     .event {
@@ -79,7 +79,6 @@
 
     <div class="col-sm-2" ng-style="roomUtils.getMessageFontSizeStyle()">
         <div class="panel panel-default" style="height: 95%">
-            <div class="panel-body">Wiadomości</div>
 
             <div ng-repeat="message in messages" class="panel panel-default"
                  style="margin-left: 2%; margin-right: 2%; word-wrap: break-word">
@@ -88,8 +87,8 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-10" ng-style="roomUtils.getEventFontSizeStyle()">
-        <h2 style="margin-left: 10%">{{room.title}}</h2>
+    <div class="col-sm-10" style="font-size: medium">
+        <h2 style="margin-left: 10%">{{title}}</h2>
         <div class="mainDiv">
             <div class="dayLabel" ng-repeat="name in day.names" ng-style="day.getStyle($index)"
                  ng-init="eventFilter.weekDay=name">
@@ -101,9 +100,10 @@
                 </div>
                 <div class="event" ng-repeat="event in events| filter:eventFilter"
                      ng-style="event.style">
-                    <label>{{event.title}}</label>
+                    <label style="line-height: 0px; margin-top: 10px">{{event.title}}</label>
                     <br></br>
-                    <label>{{event.teacherName}}</label>
+                    <label ng-if="event.roomId!=roomId">{{event.roomId}}</label>
+                    <a>{{event.teacherName}}</a>
                 </div>
             </div>
             <div class="hourColumn" ng-repeat="row in hourColumn.getHourArray()" ng-style="hourColumn.getStyle($index)">

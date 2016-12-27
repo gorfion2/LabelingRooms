@@ -12,6 +12,14 @@ messagesModule.controller('MessagesController', ['$scope', '$location', '$timeou
         MessagesService.getMyMessages(function (wrapper) {
             if (wrapper.message == null) {
                 $scope.messages = wrapper.data;
+                $scope.messages.forEach(function (message) {
+                    if (message.messageText.length > 80) {
+                        message.shortMessageText = message.messageText.substring(0, 80) + "...";
+                    }else{
+                        message.shortMessageText =message.messageText;
+                    }
+                });
+
             }
         });
     };

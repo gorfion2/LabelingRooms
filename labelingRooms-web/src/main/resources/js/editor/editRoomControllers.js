@@ -7,12 +7,12 @@ var editRoomModule = angular.module(
 editRoomModule.controller('EditRoomController', ['$scope', '$location', 'EditRoomRepository', 'EditRoomService', function ($scope, $location, EditRoomRepository, EditRoomService) {
 
     $scope.editAction = $location.path() === '/edytuj/pokoj';
-
+    $scope.roomRegex = '^[0-9]{1,3}$';
     $scope.save = function () {
         EditRoomRepository.saveRoom($scope.room, function (status) {
-            if(status.success===true){
+            if (status.success === true) {
                 $location.path('/pokoje');
-            }else{
+            } else {
                 alert(status.message);
             }
 
@@ -21,9 +21,9 @@ editRoomModule.controller('EditRoomController', ['$scope', '$location', 'EditRoo
 
     $scope.edit = function () {
         EditRoomRepository.editRoom($scope.room, function (status) {
-            if(status.success===true){
+            if (status.success === true) {
                 $location.path('/pokoje');
-            }else{
+            } else {
                 alert(status.message);
             }
 
@@ -33,7 +33,14 @@ editRoomModule.controller('EditRoomController', ['$scope', '$location', 'EditRoo
     if ($scope.editAction && EditRoomService.getRoom() !== null) {
         $scope.room = EditRoomService.getRoom();
     } else {
-        $scope.room = {"borderColor":"#ffffff","backgroundColor":"#9B9B9B","labColor":"#0a3aff","labelColor":"#7A4DF2"} ;
+        $scope.room = {
+            "borderColor": "#ffffff",
+            "backgroundColor": "#9B9B9B",
+            "labColor": "#0a3aff",
+            "labelColor": "#7A4DF2",
+            "eventFontSize": 100,
+            "messageFontSize": 100
+        };
     }
 
 }]);

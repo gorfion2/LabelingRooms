@@ -79,5 +79,37 @@ mainApp.controller('NavbarController', ['$scope', '$location', function ($scope,
     };
 }]);
 
+mainApp.run(['$rootScope', '$location', 'IndexService', function ($rootScope, $location, IndexService) {
+    $rootScope.$on('$routeChangeStart', function (event) {
+
+            IndexService.isLogged(function (username) {
+                if (username.data === false) {
+                    window.location = "/";
+                }
+            });
+            //window.alert($location.path().toString());
+            //if (!Auth.isLoggedIn()) {
+            //    console.log('DENY');
+            //    event.preventDefault();
+            //    $location.path('/login');
+            //}
+            //else {
+            //    console.log('ALLOW');
+            //    $location.path('/home');
+            //}
+        }
+    );
+}]);
+
+
+mainApp.factory('IndexService', ['$resource', function ($resource) {
+    return $resource('', {}, {
+        isLogged: {
+            method: 'GET',
+            url: '/teacher/logged'
+        }
+    })
+}]);
+
 
 

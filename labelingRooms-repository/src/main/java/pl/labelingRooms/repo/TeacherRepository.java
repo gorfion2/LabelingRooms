@@ -10,4 +10,6 @@ import pl.labelingRooms.model.dbo.Teacher;
 @Repository
 public interface TeacherRepository extends CrudRepository<Teacher, Long> {
     Teacher findByUsername(String loggedUsername);
+
+
 }

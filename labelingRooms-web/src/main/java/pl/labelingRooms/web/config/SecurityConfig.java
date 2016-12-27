@@ -41,9 +41,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.authorizeRequests()
-                .antMatchers("/**").permitAll().antMatchers("/bootstrap/**").permitAll()
+                .antMatchers("/plan/**").permitAll().antMatchers("/js/bower_components/angular/angular.min.js",
+                "/js/bower_components/angular-route/angular-route.min.js",
+                "/js/bower_components/angular-resource/angular-resource.js",
+                "/js/bower_components/jquery/dist/jquery.min.js",
+                "/js/bower_components/bootstrap/dist/js/bootstrap.min.js",
+                "/js/bower_components/bootstrap/dist/css/bootstrap.min.css",
+                "/js/public/scheduleController.js",
+                "/js/public/scheduleService.js",
+                "/room/**/events",
+                "/room/**/messages",
+                "/room/**/public", "/login", "/data/version",
+                "/teacher/logged").permitAll()
                 .anyRequest()
-                .access("hasRole('ROLE_TEACHER')").and().formLogin().and().csrf().disable();
+                .access("hasRole('ROLE_TEACHER')").and().formLogin().loginPage("/login").usernameParameter("username").passwordParameter("password").and().csrf().disable();
     }
 
 }

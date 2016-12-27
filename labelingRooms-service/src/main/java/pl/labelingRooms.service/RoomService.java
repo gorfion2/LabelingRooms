@@ -7,6 +7,8 @@ import pl.labelingRooms.model.InvalidDataException;
 import pl.labelingRooms.model.dbo.Room;
 import pl.labelingRooms.model.dbo.Teacher;
 import pl.labelingRooms.model.dto.RoomDto;
+import pl.labelingRooms.repo.EventRepository;
+import pl.labelingRooms.repo.MessageRepository;
 import pl.labelingRooms.repo.RoomRepository;
 import pl.labelingRooms.service.mapper.RoomMapper;
 import pl.labelingRooms.service.validator.RoomValidator;
@@ -25,6 +27,12 @@ public class RoomService extends AbstractService<Room, RoomDto, RoomRepository, 
     @Autowired
     private TeacherService teacherService;
 
+    @Autowired
+    private MessageRepository messageRepository;
+
+    @Autowired
+    private EventRepository eventRepository;
+
     @Override
     @Transactional
     public void delete(RoomDto modelToDelete) throws InvalidDataException {
@@ -32,6 +40,8 @@ public class RoomService extends AbstractService<Room, RoomDto, RoomRepository, 
         Room roomToDelete = mapper.convertToDBO(modelToDelete);
         roomToDelete.setTeacherList(new ArrayList<>());
         repo.save(roomToDelete);
+        messageRepository.deleteAllByRoom(roomToDelete);
+        eventRepository.deleteAllByRoom(roomToDelete);
         repo.delete(roomToDelete);
     }
 
@@ -46,9 +56,7 @@ public class RoomService extends AbstractService<Room, RoomDto, RoomRepository, 
 
     public void edit(RoomDto modelToEdit) throws InvalidDataException {
         roomValidator.validate(modelToEdit);
-        if (!repo.exists(modelToEdit.getNumber())) {
-            throw new InvalidDataException("Pokój nie istnieje");
-        }
+        roomValidator.validateModelToEdit(modelToEdit);
         super.save(modelToEdit);
     }
 

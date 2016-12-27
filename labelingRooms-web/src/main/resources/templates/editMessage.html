@@ -1,17 +1,19 @@
 <div class="container">
-    {{message}}
     <form class="form-horizontal" name="messageForm">
         <div ng-class="messageForm.messageText.$valid ?  'form-group': 'form-group has-error has-feedback'">
-            <div ng-class="messageForm.messageText.$valid ?  'form-group': 'form-group has-error has-feedback'">
-                <label class="control-label col-sm-3" for="messageText">Treść:</label>
-                <div class="col-sm-5">
-                <textarea name="messageText" ng-model="message.messageText" class="form-control" id="messageText" ng-maxlength="128"
+            <label class="control-label col-sm-3" for="messageText">Treść:</label>
+            <div class="col-sm-5">
+                <textarea name="messageText" ng-model="message.messageText" class="form-control" id="messageText"
+                          ng-maxlength="128"
                           required></textarea>
-                </div>
             </div>
+        </div>
+
+        <div ng-class="messageForm.rooms.$valid ?  'form-group': 'form-group has-error has-feedback'">
             <label class="control-label col-sm-3" for="rooms">Pokój:</label>
             <div class="col-sm-5">
-                <input ng-pattern="roomsRegex" name="rooms" ng-model="message.roomNumber" class="form-control" id="rooms" type="text" placeholder="np. 903, 102, 193"
+                <input ng-pattern="roomRegex" name="rooms" ng-model="message.roomNumber" class="form-control"
+                       id="rooms" type="text" placeholder="np. 903"
                        required>
             </div>
         </div>

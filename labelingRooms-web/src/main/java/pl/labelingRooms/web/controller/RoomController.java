@@ -30,6 +30,12 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
     @Autowired
     MessageService messageService;
 
+    @Override
+    @RequestMapping("/{id}/public")
+    public RoomDto findOne(@PathVariable int id) {
+        return super.findOne(id);
+    }
+
     @RequestMapping("/{roomId}/messages")
     public List<MessageDto> getMessageByRoom(@PathVariable Long roomId) {
         Room room = service.findOneDBO(roomId);
@@ -50,9 +56,8 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
         if (!room.getTeacherRoom()) {
             return eventService.getEventsByRoom(room);
         } else {
-//            return eventService.getEventsDataByTeachers(room.getTeacherList());
+            return eventService.getEventsDataByTeachers(room.getTeacherList());
         }
-        return null;
     }
 
     @RequestMapping("/all")

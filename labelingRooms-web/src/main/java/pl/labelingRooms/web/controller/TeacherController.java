@@ -1,9 +1,9 @@
 package pl.labelingRooms.web.controller;
 
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import pl.labelingRooms.model.DataWrapper;
 import pl.labelingRooms.model.InvalidDataException;
 import pl.labelingRooms.model.Status;
 import pl.labelingRooms.model.dbo.Teacher;
@@ -16,7 +16,7 @@ import pl.labelingRooms.service.TeacherService;
  */
 @RestController
 @RequestMapping("/teacher")
-public class TeacherController extends AbstractController<Teacher,TeacherDto, TeacherService>  {
+public class TeacherController extends AbstractController<Teacher, TeacherDto, TeacherService> {
 
     @Override
     public Status save(@RequestBody TeacherDto modelToSave) {
@@ -32,6 +32,17 @@ public class TeacherController extends AbstractController<Teacher,TeacherDto, Te
         } catch (Exception e) {
             return handleException(e);
         }
+    }
+
+    @RequestMapping("/logged")
+    public DataWrapper<Boolean> isLogged() {
+        try {
+            service.getLoggedTeacher();
+            return new DataWrapper<>(null, true);
+        } catch (InvalidDataException e) {
+            return new DataWrapper<>(null, false);
+        }
+
     }
 
 

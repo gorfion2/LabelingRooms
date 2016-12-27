@@ -13,7 +13,7 @@
     <thead>
     <tr>
         <th>Numer<br><input class="form-control" type="text" ng-model="roomFilters.number"/></th>
-        <th>Typ<br><input class="form-control" type="text" ng-model="roomFilters.weekDayIndex"/></th>
+        <th>Typ<br><input ng-disabled="true" class="form-control" type="text" ng-model="roomFilters.weekDayIndex"/></th>
         <th>Właściciele<br><input class="form-control" type="text" ng-model="roomFilters.owners"/></th>
         <th>Opcje</th>
     </tr>
@@ -22,7 +22,8 @@
     <tbody>
     <tr ng-repeat="room in rooms| filter:roomFilters" ng-class="room.yourRoom ?  'myRoomClass': ''">
         <td>{{room.number}}</td>
-        <td>typ</td>
+        <td ng-hide="room.teacherRoom">Laboratorium</td>
+        <td ng-show="room.teacherRoom">Pokój konsultacji</td>
         <td> {{room.owners}}</td>
         <td><span ng-hide="room.yourRoom || !room.teacherRoom" class="glyphicon glyphicon-home"
                   ng-click="assignRoom(room)"></span>

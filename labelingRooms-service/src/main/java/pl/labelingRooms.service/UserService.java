@@ -12,7 +12,6 @@ import pl.labelingRooms.model.dto.UserDto;
 import pl.labelingRooms.repo.UserRepo;
 import pl.labelingRooms.repo.UserRoleRepo;
 import pl.labelingRooms.service.mapper.UserMapper;
-import pl.labelingRooms.service.validator.UserValidator;
 
 /**
  * Created by Kamil on 2016-12-01.
@@ -20,8 +19,6 @@ import pl.labelingRooms.service.validator.UserValidator;
 @Service
 public class UserService extends AbstractService<User, UserDto, UserRepo, UserMapper> {
 
-    @Autowired
-    UserValidator userValidator;
 
     @Autowired
     UserRoleRepo userRoleRepo;
@@ -29,13 +26,12 @@ public class UserService extends AbstractService<User, UserDto, UserRepo, UserMa
     @Override
     @Transactional
     public void save(UserDto modelToSave) throws InvalidDataException {
-        userValidator.validate(modelToSave);
         User user = mapper.convertToDBO(modelToSave);
         repo.save(user);
         userRoleRepo.save(new UserRole(user, "ROLE_TEACHER"));
     }
 
-    public User getLoggedUser(){
+    public User getLoggedUser() {
         return repo.findByusername(getLoggedUsername());
     }
 

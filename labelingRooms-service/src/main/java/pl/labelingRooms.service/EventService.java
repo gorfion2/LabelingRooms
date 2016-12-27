@@ -24,26 +24,6 @@ public class EventService extends AbstractService<Event, EventDto, EventReposito
     @Autowired
     private EventValidator eventValidator;
 
-    public List<EventWrapper> getEventsByRoom(Room room) {
-        if (room == null)
-            return null;
-        List<Event> allByRoom = repo.findAllByRoom(room);
-        List<EventWrapper> eventWrappers = new ArrayList<>();
-        eventWrappers.add(new EventWrapper(mapper.convertToDTO(
-                allByRoom.stream().filter(event -> event.getWeekType().equals(WeekType.EVEN)
-                        || event.getWeekType().equals(WeekType.ALL)).collect(Collectors.toList())),
-                WeekDay.getDayNames(false)));
-
-        EventWrapper odEvents = new EventWrapper(mapper.convertToDTO(
-                allByRoom.stream().filter(event -> event.getWeekType().equals(WeekType.ODD)
-                        || event.getWeekType().equals(WeekType.ALL)).collect(Collectors.toList())),
-                WeekDay.getDayNames(true));
-        odEvents.eventDtos.stream().forEach(eventDto -> eventDto.setWeekDay(eventDto.getWeekDay() + " np"));
-        eventWrappers.add(odEvents);
-
-        return eventWrappers;
-    }
-
     public DataWrapper<List<EventDto>> getEventsDataByTeacher(Teacher teacher) {
         return new DataWrapper<>(null, mapper.convertToDTO((repo.findByTeacher(teacher))));
     }
@@ -60,11 +40,45 @@ public class EventService extends AbstractService<Event, EventDto, EventReposito
         super.save(modelToSave);
     }
 
-    public List<EventDto> getEventsDataByTeachers(List<Teacher> teacherList) {
-        ArrayList<EventDto> eventDtos = new ArrayList<>();
+    public List<EventWrapper> getEventsDataByTeachers(List<Teacher> teacherList) {
+
+        List<EventWrapper> eventWrappers = new ArrayList<>();
         for (Teacher teacher : teacherList) {
-            eventDtos.addAll(mapper.convertToDTO((repo.findByTeacher(teacher))));
+            List<Event> allByTeacher = repo.findByTeacher(teacher);
+            EventWrapper eventEvents = createEventWrapper(allByTeacher, WeekType.EVEN);
+            eventEvents.title = teacher.getName() + " " + teacher.getSurname() + " tydzień parzysty";
+            eventWrappers.add(eventEvents);
+            EventWrapper oddEvents = createEventWrapper(allByTeacher, WeekType.ODD);
+            oddEvents.title = teacher.getName() + " " + teacher.getSurname() + " tydzień nieparzysty";
+            eventWrappers.add(oddEvents);
         }
-        return eventDtos;
+        return eventWrappers;
+    }
+
+    public List<EventWrapper> getEventsByRoom(Room room) {
+        if (room == null)
+            return null;
+        List<Event> allByRoom = repo.findAllByRoom(room);
+        List<EventWrapper> eventWrappers = new ArrayList<>();
+        EventWrapper evenEvents = createEventWrapper(allByRoom, WeekType.EVEN);
+        evenEvents.title = "Pokój " + room.getNumber() + " tydzień parzysty";
+        eventWrappers.add(evenEvents);
+        EventWrapper oddEvents = createEventWrapper(allByRoom, WeekType.ODD);
+        oddEvents.title = "Pokój " + room.getNumber() + " tydzień nieparzysty";
+        eventWrappers.add(oddEvents);
+
+        return eventWrappers;
+    }
+
+    private EventWrapper createEventWrapper(List<Event> allEvent, WeekType weekType) {
+        boolean oddWeek = weekType.equals(WeekType.ODD);
+        EventWrapper eventWrapper = new EventWrapper(mapper.convertToDTO(
+                allEvent.stream().filter(event -> event.getWeekType().equals(weekType)
+                        || event.getWeekType().equals(WeekType.ALL)).collect(Collectors.toList())),
+                WeekDay.getDayNames(oddWeek));
+        if (oddWeek) {
+            eventWrapper.eventDtos.stream().forEach(eventDto -> eventDto.setWeekDay(eventDto.getWeekDay() + " np"));
+        }
+        return eventWrapper;
     }
 }

@@ -2,6 +2,7 @@ package pl.labelingRooms.repo;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
+import pl.labelingRooms.model.WeekDay;
 import pl.labelingRooms.model.dbo.Event;
 import pl.labelingRooms.model.dbo.Room;
 import pl.labelingRooms.model.dbo.Teacher;
@@ -16,4 +17,8 @@ public interface EventRepository extends CrudRepository<Event, Long> {
     List<Event> findAllByRoom(Room room);
 
     List<Event> findByTeacher(Teacher teacher);
+
+    List<Event> findAllByRoomAndWeekDay(Room room, WeekDay weekDay);
+
+    void deleteAllByRoom(Room roomToDelete);
 }
