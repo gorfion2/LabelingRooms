@@ -1,52 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34ae4e93-6e5d-486d-b754-c0109b265df0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/DataVersionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/DataVersionController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/login.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_6_RELEASE.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-model/labelingRooms-model.iml" afterPath="$PROJECT_DIR$/labelingRooms-model/labelingRooms-model.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/EventWrapper.java" afterPath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/EventWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-repository/labelingRooms-repository.iml" afterPath="$PROJECT_DIR$/labelingRooms-repository/labelingRooms-repository.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/EventRepository.java" afterPath="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/EventRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/MessageRepository.java" afterPath="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/MessageRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/TeacherRepository.java" afterPath="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/TeacherRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/EventService.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/EventService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/MessageService.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/MessageService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/TeacherService.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/TeacherService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/UserService.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/AbstractValidator.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/AbstractValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/EventValidator.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/EventValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/MessageValidator.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/MessageValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/RoomValidator.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/RoomValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/UserValidator.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/UserValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/labelingRooms-web.iml" afterPath="$PROJECT_DIR$/labelingRooms-web/labelingRooms-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/pom.xml" afterPath="$PROJECT_DIR$/labelingRooms-web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/CustomCommandLineRunner.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/CustomCommandLineRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/config/SecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/RoomController.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/RoomController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/TeacherController.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/TeacherController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editMessageControllers.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editMessageControllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editRoomControllers.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editRoomControllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/messagesControllers.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/messagesControllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/routeProvider.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/routeProvider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleService.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editMessage.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editMessage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editRoom.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editRoom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editTeacher.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editTeacher.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/events.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/messages.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/messages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/rooms.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/rooms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html" />
-    </list>
+    <list default="true" id="34ae4e93-6e5d-486d-b754-c0109b265df0" name="Default" comment="" />
     <ignored path="labelingRooms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1415,12 +1370,12 @@
       <workItem from="1482077299890" duration="787000" />
       <workItem from="1482078133390" duration="13142000" />
       <workItem from="1482231415840" duration="7213000" />
-      <workItem from="1482866345456" duration="3741000" />
+      <workItem from="1482866345456" duration="4328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168300000" />
+    <option name="totallyTimeSpent" value="168887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1449,7 +1404,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29022083" sideWeight="0.4795022" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29022083" sideWeight="0.4795022" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
