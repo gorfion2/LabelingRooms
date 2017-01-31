@@ -8,7 +8,7 @@ import static javax.persistence.GenerationType.IDENTITY;
  * Created by Kamil S on 2016-03-05.
  */
 @Entity
-@Table(name = "user_roles",
+@Table(name = "user_role",
         uniqueConstraints = @UniqueConstraint(
                 columnNames = { "role", "username" }))
 public class UserRole{

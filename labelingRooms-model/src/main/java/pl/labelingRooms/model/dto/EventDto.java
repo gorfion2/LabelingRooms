@@ -13,7 +13,7 @@ public class EventDto {
     private int startMinute;
     private int endHour;
     private int endMinute;
-    private int roomId;
+    private String roomId;
     private String teacherName;
 
     public String getTitle() {
@@ -80,11 +80,11 @@ public class EventDto {
         this.endMinute = endMinute;
     }
 
-    public int getRoomId() {
+    public String getRoomId() {
         return roomId;
     }
 
-    public void setRoomId(int roomId) {
+    public void setRoomId(String roomId) {
         this.roomId = roomId;
     }
 

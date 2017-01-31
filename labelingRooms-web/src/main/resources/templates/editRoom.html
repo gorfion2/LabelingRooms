@@ -9,8 +9,8 @@
         <div ng-class="roomForm.number.$valid ?  'form-group': 'form-group has-error has-feedback'">
             <label class="control-label col-sm-3" for="room">Numer:</label>
             <div class="col-sm-5">
-                <input ng-disabled="editAction" ng-pattern="roomRegex" name="number" ng-model="room.number" type="text"
-                       class="form-control"
+                <input ng-disabled="editAction"  name="number" ng-model="room.number" type="text"
+                       class="form-control" ng-maxlength="10" ng-minlength="1"
                        id="room"
                        placeholder="np. 903" required>
             </div>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div ng-class="roomForm.eventFontSize.$valid ?  'form-group': 'form-group has-error has-feedback'">
-            <label class="control-label col-sm-3" for="room">Wielkość trzcionki wydarzeń:</label>
+            <label class="control-label col-sm-3" for="room">Wielkość trzcionki wydarzeń (%):</label>
             <div class="col-sm-5">
                 <input name="eventFontSize" ng-model="room.eventFontSize" type="number"
                        class="form-control" ng-min="10" ng-max="500"
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div ng-class="roomForm.messageFontSize.$valid ?  'form-group': 'form-group has-error has-feedback'">
-            <label class="control-label col-sm-3" for="room">Wielkość trzcionki wiadomości:</label>
+            <label class="control-label col-sm-3" for="room">Wielkość trzcionki wiadomości (%):</label>
             <div class="col-sm-5">
                 <input name="messageFontSize" ng-model="room.messageFontSize" type="number"
                        class="form-control" ng-min="10" ng-max="500"
@@ -40,11 +40,11 @@
             </div>
         </div>
         <div ng-class="roomForm.labColor.$valid ?  'form-group': 'form-group has-error has-feedback'">
-            <label class="control-label col-sm-3" for="labColor">Color laboratorium:</label>
+            <label class="control-label col-sm-3" for="labColor">Color wydarzeń:</label>
             <div class="col-sm-5">
                 <input name="labColor" ng-model="room.labColor" type="color" class="form-control"
                        id="labColor">
-            </div>
+            </div>d
         </div>
         <div ng-class="roomForm.labelColor.$valid ?  'form-group': 'form-group has-error has-feedback'">
             <label class="control-label col-sm-3" for="labelColor">Color szczegółów:</label>

@@ -36,12 +36,15 @@ public class EventValidator extends AbstractValidator<EventDto> {
         validateNumber(eventDto.getStartHour(), 23, 0);
         validateNumber(eventDto.getEndMinute(), 59, 0);
         validateNumber(eventDto.getStartMinute(), 59, 0);
-        roomValidator.validateRoomId((long) eventDto.getRoomId());
-        List<Event> allByRoomAndWeekDay = eventRepository.findAllByRoomAndWeekDay(roomRepository.findOne((long) eventDto.getRoomId()), WeekDay.getValue(eventDto.getWeekDay()));
+        roomValidator.validateRoomId(eventDto.getRoomId());
+        List<Event> allByRoomAndWeekDay = eventRepository.findAllByRoomAndWeekDay(roomRepository.findOneByNumber(eventDto.getRoomId()), WeekDay.getValue(eventDto.getWeekDay()));
 
         int start = eventDto.getStartHour() * 60 + eventDto.getStartMinute();
         int end = eventDto.getEndHour() * 60 + eventDto.getEndMinute();
         for (Event event : allByRoomAndWeekDay) {
+            if (eventDto.getId() == null ||eventDto.getId() == event.getId()) {
+                continue;
+            }
             if (event.getWeekType().equals(WeekType.getValue(eventDto.getWeek())) ||
                     event.getWeekType().equals(WeekType.getValue(eventDto.getWeek()))) {
                 int eventStart = event.getStartHour() * 60 + event.getStartMinute();

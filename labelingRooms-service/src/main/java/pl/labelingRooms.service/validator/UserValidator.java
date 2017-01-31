@@ -13,7 +13,7 @@ import pl.labelingRooms.repo.TeacherRepository;
 public class UserValidator extends AbstractValidator<UserDto> {
 
     @Autowired
-    TeacherRepository teacherRepository;
+    private TeacherRepository teacherRepository;
 
     @Override
     public void validate(UserDto userDto) throws InvalidDataException {

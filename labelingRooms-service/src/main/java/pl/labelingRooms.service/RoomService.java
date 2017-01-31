@@ -48,7 +48,7 @@ public class RoomService extends AbstractService<Room, RoomDto, RoomRepository, 
     @Override
     public void save(RoomDto modelToSave) throws InvalidDataException {
         roomValidator.validate(modelToSave);
-        if (repo.exists(modelToSave.getNumber())) {
+        if (repo.findOneByNumber(modelToSave.getNumber()) != null) {
             throw new InvalidDataException("Pokój już istnieje");
         }
         super.save(modelToSave);
@@ -61,11 +61,11 @@ public class RoomService extends AbstractService<Room, RoomDto, RoomRepository, 
     }
 
     @Transactional
-    public void assignRoom(Long roomId) throws InvalidDataException {
+    public void assignRoom(String roomId) throws InvalidDataException {
         roomValidator.validateRoomId(roomId);
         Teacher loggedTeacher = teacherService.getLoggedTeacher();
 
-        Room room = repo.findOne(roomId);
+        Room room = repo.findOneByNumber(roomId);
         if (!room.getTeacherList().contains(loggedTeacher)) {
             room.getTeacherList().add(loggedTeacher);
             repo.save(room);
@@ -73,14 +73,26 @@ public class RoomService extends AbstractService<Room, RoomDto, RoomRepository, 
     }
 
     @Transactional
-    public void exitRoom(Long roomId) throws InvalidDataException {
+    public void exitRoom(String roomId) throws InvalidDataException {
         roomValidator.validateRoomId(roomId);
         Teacher loggedTeacher = teacherService.getLoggedTeacher();
 
-        Room room = repo.findOne(roomId);
+        Room room = repo.findOneByNumber(roomId);
         if (room.getTeacherList().contains(loggedTeacher)) {
             room.getTeacherList().remove(loggedTeacher);
             repo.save(room);
         }
+    }
+
+
+    public Room findOneDBO(String id) {
+        return repo.findOneByNumber(id);
+    }
+
+    public RoomDto findOne(String id) {
+        Room dbo = repo.findOneByNumber(id);
+        if (dbo == null)
+            return null;
+        return mapper.convertToDTO(dbo);
     }
 }

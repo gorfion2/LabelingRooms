@@ -38,7 +38,7 @@ public class EventMapper extends AbstractMapper<Event, EventDto> {
         event.setTitle(eventDto.getTitle());
         event.setWeekDay(WeekDay.getValue(eventDto.getWeekDay()));
         event.setWeekType(WeekType.getValue(eventDto.getWeek()));
-        event.setRoom(roomService.findOneDBO((long) eventDto.getRoomId()));
+        event.setRoom(roomService.findOneDBO(eventDto.getRoomId()));
         try {
             event.setTeacher(teacherService.getLoggedTeacher());
         } catch (InvalidDataException e) {
@@ -68,7 +68,7 @@ public class EventMapper extends AbstractMapper<Event, EventDto> {
         eventDto.setTitle(event.getTitle());
         eventDto.setWeekDay(event.getWeekDay().getName());
         eventDto.setWeek(event.getWeekType().getName());
-        eventDto.setRoomId(event.getRoom().getNumber().intValue());
+        eventDto.setRoomId(event.getRoom().getNumber());
         eventDto.setTeacherName(generateTeacherName(event));
         return eventDto;
     }

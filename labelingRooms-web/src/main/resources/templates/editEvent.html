@@ -4,13 +4,13 @@
             <label class="control-label col-sm-3" for="title">Opis:</label>
             <div class="col-sm-5">
                 <input name="title" ng-model="event.title" type="text" class="form-control" id="title"
-                       placeholder="np. PUM GKIO2" required>
+                       ng-maxlength="50" placeholder="np. PUM GKIO2" required>
             </div>
         </div>
         <div ng-class="eventForm.roomId.$valid ?  'form-group': 'form-group has-error has-feedback'">
             <label class="control-label col-sm-3" for="room">Sala:</label>
             <div class="col-sm-5">
-                <input ng-pattern="roomRegex" name="roomId" ng-model="event.roomId" type="text" class="form-control"
+                <input ng-maxlength="10" ng-minlength="1" name="roomId" ng-model="event.roomId" type="text" class="form-control"
                        id="room"
                        placeholder="np. 903" required>
             </div>

@@ -144,7 +144,7 @@ scheduleModule.controller('scheduleController', ['$scope', '$interval', '$locati
             IndexService.getDataVersion(function (wrapper) {
                 if ($scope.actualDataVersion !== wrapper.data) {
                     $scope.actualDataVersion = wrapper.data
-                    var roomId = $location.path().slice(1, 4);
+                    var roomId = $location.path().slice(1, 11);
                     if (roomId === undefined || roomId === null || roomId === 0)
                         return;
 

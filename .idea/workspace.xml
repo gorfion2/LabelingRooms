@@ -1,7 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34ae4e93-6e5d-486d-b754-c0109b265df0" name="Default" comment="" />
+    <list default="true" id="34ae4e93-6e5d-486d-b754-c0109b265df0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/RELEASE-NOTES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/asf-logo-wide.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/asf-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/bg-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/bg-middle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/bg-nav-item.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/bg-nav.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/bg-upper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/tomcat-power.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/tomcat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/tomcat.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/tomcat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-tomcat-9.0.0.M13/webapps/ROOT/tomcat.svg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kamil Seweryn projekt inżynierka.docx" afterPath="$PROJECT_DIR$/Kamil Seweryn projekt inżynierka.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/labelingRooms_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/labelingRooms_web_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Room.java" afterPath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Room.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/User.java" afterPath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/UserRole.java" afterPath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/UserRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java" afterPath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/MessageDto.java" afterPath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/MessageDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/RoomDto.java" afterPath="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/RoomDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/RoomRepository.java" afterPath="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/RoomRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/MyUserDetailsService.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/MyUserDetailsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/RoomMapper.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/RoomMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/EventValidator.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/EventValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/MessageValidator.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/MessageValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/RoomValidator.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/RoomValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/UserValidator.java" afterPath="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/UserValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/pom.xml" afterPath="$PROJECT_DIR$/labelingRooms-web/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/DataVersionController.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/DataVersionController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/RoomController.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/RoomController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/TeacherController.java" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/TeacherController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editMessage.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editMessage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editRoom.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editRoom.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html" afterPath="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labelingRooms.iml" afterPath="$PROJECT_DIR$/labelingRooms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
     <ignored path="labelingRooms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,104 +90,114 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/index.html">
+      <file leaf-file-name="EventService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/EventService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="183" column="54" selection-start-line="183" selection-start-column="54" selection-end-line="183" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userRouteProvider.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../LabBD version 1/ProjectBD/trainingCompany-web/src/main/resources/js/user/userRouteProvider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="84" column="56" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routeProvider.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/routeProvider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/config/SecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/TeacherController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+            <state relative-caret-position="442">
+              <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataWrapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/DataWrapper.java">
+      <file leaf-file-name="RoomValidator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/RoomValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            <state relative-caret-position="646">
+              <caret line="42" column="93" selection-start-line="42" selection-start-column="93" selection-end-line="42" selection-end-column="93" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#538#539#0" expanded="false" />
+                <element signature="e#586#587#0" expanded="false" />
+                <element signature="e#653#654#0" expanded="false" />
+                <element signature="e#704#705#0" expanded="false" />
+                <element signature="e#769#770#0" expanded="false" />
+                <element signature="e#817#818#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="greeting.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/greeting.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+            <state relative-caret-position="255">
+              <caret line="24" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1035#1036#0" expanded="false" />
+                <element signature="e#1097#1098#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/EventRepository.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state relative-caret-position="272">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/login.html">
+      <file leaf-file-name="EventController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/EventController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="120" column="57" selection-start-line="120" selection-start-column="57" selection-end-line="120" selection-end-column="57" />
-              <folding />
+            <state relative-caret-position="272">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editTeacher.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editTeacher.html">
+      <file leaf-file-name="AbstractController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/AbstractController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="136">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1025#1026#0" expanded="false" />
+                <element signature="e#1077#1078#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,9 +210,9 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Aspect" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -167,57 +227,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/MessageController.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/Application.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/CustomComandLineRunner.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/UserDto.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Room.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/RoomDto.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/RoomMapper.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/WeekType.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/AbstractService.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/WeekDay.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/RoomController.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/UserService.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/TeacherService.java" />
         <option value="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/TeacherRepository.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/UserValidator.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/MessageValidator.java" />
         <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/AbstractValidator.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/EventValidator.java" />
         <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/EventWrapper.java" />
         <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/EventService.java" />
         <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/MessageService.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/messagesControllers.js" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/pom.xml" />
         <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/DataVersionService.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/DataVersionController.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleService.js" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editTeacher.html" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/events.html" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/messages.html" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/rooms.html" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editMessageControllers.js" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editMessage.html" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editRoomControllers.js" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editRoom.html" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/CustomCommandLineRunner.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html" />
         <option value="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/MessageRepository.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/RoomValidator.java" />
-        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java" />
         <option value="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/EventRepository.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/TeacherController.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/routeProvider.js" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editEventServices.js" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html" />
+        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/User.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/UserRole.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/DataVersionController.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Room.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/RoomDto.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/MessageDto.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/AbstractService.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/MessageValidator.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/RoomMapper.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editRoom.html" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editMessage.html" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/RoomController.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/UserValidator.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/RoomRepository.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js" />
+        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/EventValidator.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/RoomValidator.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/greeting.html" />
+        <option value="$PROJECT_DIR$/labelingRooms-web/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -270,116 +330,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="pl/labelingRooms/web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controller">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="pl/labelingRooms/web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="config">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane />
       </pane>
@@ -567,40 +517,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="labelingRooms-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labelingRooms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LabelingRooms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="labelingRooms-service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -713,9 +629,187 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labelingRooms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabelingRooms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labelingRooms-model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labelingRooms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabelingRooms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labelingRooms-model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dbo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pl/labelingRooms/web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controller">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="labelingRooms-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pl/labelingRooms/web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -725,10 +819,10 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="routepro&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/routeProvider.js&#10;index&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/index.html&#10;teacher&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editTeacher.html&#10;login&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/login.html&#10;room&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java&#10;schedule&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/schedule.html&#10;messagese&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/MessageService.java&#10;comman&#9;PSI&#9;JAVA://pl.labelingRooms.web.CustomCommandLineRunner&#10;editroom&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editRoom.html&#10;editroomc&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/editRoomControllers.js&#10;editMe&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/editMessageControllers.js&#10;editmes&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editMessage.html&#10;rooms&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/rooms.html&#10;messa&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/messages.html&#10;events&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/events.html&#10;editE&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editEvent.html&#10;edit&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editTeacher.html&#10;schedulec&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/public/scheduleController.js&#10;sched&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/schedule.html&#10;sec&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/java/pl/labelingRooms/web/config/SecurityConfig.java&#10;datav&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/DataVersionService.java&#10;security&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/java/pl/labelingRooms/web/config/SecurityConfig.java&#10;controller&#9;PSI&#9;JAVA://pl.labelingRooms.web.controller.Controller&#10;editm&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editMessage.html&#10;sc&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/schedule.html&#10;messages&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/messagesControllers.js&#10;message&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Message.java&#10;event&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Event.java&#10;MESSA&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/MessageService.java&#10;eventdt&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java&#10;roomva&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/RoomValidator.java&#10;editroo&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editRoom.html&#10;editroomco&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/editRoomControllers.js&#10;roomsc&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/roomsControllers.js&#10;roomv&#9;PSI&#9;JAVA://pl.labelingRooms.service.validator.RoomValidator&#10;editmessa&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editMessage.html&#10;user&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/UserValidator.java&#10;editte&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editTeacher.html&#10;userva&#9;PSI&#9;JAVA://pl.labelingRooms.service.validator.UserValidator&#10;abstr&#9;PSI&#9;JAVA://pl.labelingRooms.web.controller.AbstractController&#10;secu&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/java/pl/labelingRooms/web/config/SecurityConfig.java&#10;eventw&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-model/src/main/java/pl/labelingRooms/model/EventWrapper.java&#10;sch&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/schedule.html&#10;roomco&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/RoomController.java&#10;eventva&#9;PSI&#9;JAVA://pl.labelingRooms.service.validator.EventValidator&#10;eventma&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java&#10;roomma&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/RoomMapper.java&#10;roomd&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/RoomDto.java&#10;roomc&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/RoomController.java&#10;eventd&#9;PSI&#9;JAVA://pl.labelingRooms.model.dto.EventDto" />
+    <property name="SearchEverywhereHistoryKey" value="eventco&#9;PSI&#9;JAVA://pl.labelingRooms.web.controller.EventController&#10;eventse&#9;PSI&#9;JAVA://pl.labelingRooms.service.EventService&#10;roomser&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java&#10;schedule&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/public/scheduleController.js&#10;abstractse&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/AbstractService.java&#10;roomre&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/RoomRepository.java&#10;appl&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/application.properties&#10;editev&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editEvent.html&#10;edit&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editMessage.html&#10;room&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editRoom.html&#10;roomr&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/RoomRepository.java&#10;schedulec&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/public/scheduleController.js&#10;roper&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/application.properties&#10;RequestMappingHandlerMapping&#9;PSI&#9;JAVA://org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping&#10;teacher&#9;PSI&#9;JAVA://pl.labelingRooms.model.dbo.Teacher&#10;editroo&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editRoom.html&#10;editmes&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editMessage.html&#10;messages&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/messagesControllers.js&#10;editte&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editTeacher.html&#10;sched&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/schedule.html&#10;eventser&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/EventService.java&#10;editEven&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/editEventServices.js&#10;roomco&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/RoomController.java&#10;routepro&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/routeProvider.js&#10;index&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/index.html&#10;login&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/login.html&#10;messagese&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/MessageService.java&#10;comman&#9;PSI&#9;JAVA://pl.labelingRooms.web.CustomCommandLineRunner&#10;editroom&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editRoom.html&#10;editroomc&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/editRoomControllers.js&#10;editMe&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/editMessageControllers.js&#10;rooms&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/rooms.html&#10;messa&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/messages.html&#10;events&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/events.html&#10;editE&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editEvent.html&#10;sec&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/java/pl/labelingRooms/web/config/SecurityConfig.java&#10;datav&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/DataVersionService.java&#10;security&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/java/pl/labelingRooms/web/config/SecurityConfig.java&#10;controller&#9;PSI&#9;JAVA://pl.labelingRooms.web.controller.Controller&#10;editm&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editMessage.html&#10;sc&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/schedule.html&#10;message&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Message.java&#10;event&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Event.java&#10;MESSA&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/MessageService.java&#10;eventdt&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java&#10;roomva&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/RoomValidator.java&#10;editroomco&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/editRoomControllers.js&#10;roomsc&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/js/editor/roomsControllers.js&#10;roomv&#9;PSI&#9;JAVA://pl.labelingRooms.service.validator.RoomValidator&#10;editmessa&#9;FILE&#9;file://C:/Users/Kamil/Desktop/Labeling Rooms/LabelingRooms/labelingRooms-web/src/main/resources/templates/editMessage.html" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
@@ -834,7 +928,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.run">
+  <component name="RunManager" selected="Maven.clean">
     <configuration default="false" name="run" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.labelingRooms.web.Application" />
@@ -1371,31 +1465,40 @@
       <workItem from="1482078133390" duration="13142000" />
       <workItem from="1482231415840" duration="7213000" />
       <workItem from="1482866345456" duration="4328000" />
+      <workItem from="1483388289406" duration="11000" />
+      <workItem from="1483546560769" duration="4461000" />
+      <workItem from="1483718270283" duration="3826000" />
+      <workItem from="1483790964282" duration="1884000" />
+      <workItem from="1483796797456" duration="8170000" />
+      <workItem from="1484003088810" duration="1397000" />
+      <workItem from="1484477726296" duration="5769000" />
+      <workItem from="1484594698103" duration="2372000" />
+      <workItem from="1485009210326" duration="603000" />
+      <workItem from="1485161602781" duration="515000" />
+      <workItem from="1485885639409" duration="97000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168887000" />
+    <option name="totallyTimeSpent" value="197992000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22082019" sideWeight="0.49707174" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2917981" sideWeight="0.5204978" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24763407" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.261347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24377745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -1404,13 +1507,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29022083" sideWeight="0.4795022" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.340694" sideWeight="0.4795022" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21987315" sideWeight="0.49707174" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4022082" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20347004" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1448,11 +1554,23 @@
           <properties />
           <option name="timeStamp" value="63" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/AbstractController.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="64" />
+      <option name="time" value="71" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1461,269 +1579,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/EventValidator.java">
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/MessageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+        <state relative-caret-position="289">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/EventWrapper.java">
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/TeacherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/messagesControllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../LabBD version 1/ProjectBD/trainingCompany-web/src/main/resources/templates/public/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../LabBD version 1/ProjectBD/trainingCompany-web/src/main/java/pl/trainingCompany/web/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-439">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/DataVersionAspect.aj" />
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/AbstractController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/AbstractService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/EventService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/MyUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/DataVersionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/DataVersionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="111" column="73" selection-start-line="111" selection-start-column="73" selection-end-line="111" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/messages.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="118" selection-start-line="12" selection-start-column="118" selection-end-line="12" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/rooms.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editMessageControllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/editRoomControllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editMessage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editRoom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="e#1128#1129#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/UserValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/AbstractValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.1.9.RELEASE/spring-core-4.1.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/TeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="561">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1731,139 +1597,373 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/MessageController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.9.RELEASE/spring-webmvc-4.1.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10047">
+          <caret line="704" column="0" selection-start-line="704" selection-start-column="0" selection-end-line="704" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.9.RELEASE/spring-webmvc-4.1.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.0.30/tomcat-embed-core-8.0.30-sources.jar!/javax/servlet/http/HttpServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11849">
+          <caret line="728" column="0" selection-start-line="728" selection-start-column="0" selection-end-line="728" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.9.RELEASE/spring-webmvc-4.1.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.9.RELEASE/spring-webmvc-4.1.9.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15147">
+          <caret line="956" column="0" selection-start-line="956" selection-start-column="0" selection-end-line="956" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7429">
+          <caret line="497" column="0" selection-start-line="497" selection-start-column="0" selection-end-line="497" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.9.RELEASE/spring-web-4.1.9.RELEASE-sources.jar!/org/springframework/web/method/HandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="276" column="39" selection-start-line="276" selection-start-column="39" selection-end-line="276" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/RoomDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/MessageDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/RoomMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/MessageValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/MessageMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editRoom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editMessage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/DataVersionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editEvent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/UserValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/RoomRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/public/scheduleController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="150" column="84" selection-start-line="150" selection-start-column="84" selection-end-line="150" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/RoomController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/schedule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="93" column="7" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/MessageRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/RoomValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/RoomService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-repository/src/main/java/pl/labelingRooms/repo/EventRepository.java">
+    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dto/EventDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="357">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/EventValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="120" column="57" selection-start-line="120" selection-start-column="57" selection-end-line="120" selection-end-column="57" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="44" column="79" selection-start-line="44" selection-start-column="79" selection-end-line="44" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/editTeacher.html">
+    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/TeacherService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/dbo/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="183" column="54" selection-start-line="183" selection-start-column="54" selection-end-line="183" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="459">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../LabBD version 1/ProjectBD/trainingCompany-web/src/main/resources/js/user/userRouteProvider.js">
+    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/mapper/EventMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" column="56" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="419">
+          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-model/src/main/java/pl/labelingRooms/model/DataWrapper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.9.RELEASE/spring-aop-4.1.9.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="-1128">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/TeacherController.java">
+    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/AbstractService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state relative-caret-position="323">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.1.9.RELEASE/spring-core-4.1.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.9.RELEASE/spring-aop-4.1.9.RELEASE-sources.jar!/org/springframework/aop/framework/adapter/MethodBeforeAdviceInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.9.RELEASE/spring-aop-4.1.9.RELEASE-sources.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.9.RELEASE/spring-aop-4.1.9.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.9.RELEASE/spring-aop-4.1.9.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="652" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.9.RELEASE/spring-web-4.1.9.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="140" column="27" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/validator/RoomValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="42" column="93" selection-start-line="42" selection-start-column="93" selection-end-line="42" selection-end-column="93" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/config/SecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/labelingRooms-service/src/main/java/pl/labelingRooms.service/EventService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+        <state relative-caret-position="442">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/AbstractController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1025#1026#0" expanded="false" />
+            <element signature="e#1077#1078#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/EventController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.9.RELEASE/spring-web-4.1.9.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ModelAttribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#538#539#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#653#654#0" expanded="false" />
+            <element signature="e#704#705#0" expanded="false" />
+            <element signature="e#769#770#0" expanded="false" />
+            <element signature="e#817#818#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/templates/greeting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/resources/js/editor/routeProvider.js">
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/src/main/java/pl/labelingRooms/web/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="24" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1035#1036#0" expanded="false" />
+            <element signature="e#1097#1098#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labelingRooms-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

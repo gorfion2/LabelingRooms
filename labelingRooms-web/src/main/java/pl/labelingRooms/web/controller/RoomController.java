@@ -30,17 +30,17 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
     @Autowired
     MessageService messageService;
 
-    @Override
+
     @RequestMapping("/{id}/public")
-    public RoomDto findOne(@PathVariable int id) {
-        return super.findOne(id);
+    public RoomDto findOne(@PathVariable String id) {
+        return service.findOne(id);
     }
 
     @RequestMapping("/{roomId}/messages")
-    public List<MessageDto> getMessageByRoom(@PathVariable Long roomId) {
+    public List<MessageDto> getMessageByRoom(@PathVariable String roomId) {
         Room room = service.findOneDBO(roomId);
         if (room == null)
-            return new ArrayList<>();
+            return new ArrayList<MessageDto>();
         if (!room.getTeacherRoom()) {
             return messageService.getMessagesByRoom(room);
         } else {
@@ -49,7 +49,7 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
     }
 
     @RequestMapping("/{roomId}/events")
-    public List<EventWrapper> getEventByRoom(@PathVariable Long roomId) {
+    public List<EventWrapper> getEventByRoom(@PathVariable String roomId) {
         Room room = service.findOneDBO(roomId);
         if (room == null)
             return new ArrayList<>();
@@ -82,7 +82,7 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
     }
 
     @RequestMapping("/{roomId}/assign")
-    public Status assignRoom(@PathVariable Long roomId) {
+    public Status assignRoom(@PathVariable String roomId) {
         try {
             service.assignRoom(roomId);
             return new Status("", true);
@@ -92,7 +92,7 @@ public class RoomController extends AbstractController<Room, RoomDto, RoomServic
     }
 
     @RequestMapping("/{roomId}/exit")
-    public Status exitRoom(@PathVariable Long roomId) {
+    public Status exitRoom(@PathVariable String roomId) {
         try {
             service.exitRoom(roomId);
             return new Status("", true);

@@ -38,7 +38,7 @@ public class TeacherController extends AbstractController<Teacher, TeacherDto, T
     public DataWrapper<Boolean> isLogged() {
         try {
             service.getLoggedTeacher();
-            return new DataWrapper<>(null, true);
+            return new DataWrapper<Boolean>(null, true);
         } catch (InvalidDataException e) {
             return new DataWrapper<>(null, false);
         }

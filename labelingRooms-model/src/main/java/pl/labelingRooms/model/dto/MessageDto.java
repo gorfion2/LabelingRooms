@@ -6,7 +6,7 @@ package pl.labelingRooms.model.dto;
 public class MessageDto {
     private long id;
     private String messageText;
-    private long roomNumber;
+    private String roomNumber;
     private String teacherName;
     private String date;
 
@@ -26,11 +26,11 @@ public class MessageDto {
         this.messageText = messageText;
     }
 
-    public long getRoomNumber() {
+    public String getRoomNumber() {
         return roomNumber;
     }
 
-    public void setRoomNumber(long roomNumber) {
+    public void setRoomNumber(String roomNumber) {
         this.roomNumber = roomNumber;
     }
 

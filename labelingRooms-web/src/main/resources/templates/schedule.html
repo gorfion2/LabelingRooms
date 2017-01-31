@@ -100,9 +100,9 @@
                 </div>
                 <div class="event" ng-repeat="event in events| filter:eventFilter"
                      ng-style="event.style">
-                    <label style="line-height: 0px; margin-top: 10px">{{event.title}}</label>
+                    <label style="margin-bottom: -3%">{{event.title}}</label>
                     <br></br>
-                    <label ng-if="event.roomId!=roomId">{{event.roomId}}</label>
+                    <label  ng-if="event.roomId!=roomId">{{event.roomId}}</label>
                     <a>{{event.teacherName}}</a>
                 </div>
             </div>

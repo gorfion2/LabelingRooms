@@ -10,7 +10,7 @@ import java.util.List;
 public class Room {
 
     @Id
-    private Long number;
+    private String number;
     private String labColor;
     private String labelColor;
     private String borderColor;
@@ -27,11 +27,11 @@ public class Room {
     @JoinTable(name = "teacher_room", joinColumns = {@JoinColumn(name = "room_id")}, inverseJoinColumns = {@JoinColumn(name = "teacher_id")})
     private List<Teacher> teacherList;
 
-    public Long getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(Long number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 

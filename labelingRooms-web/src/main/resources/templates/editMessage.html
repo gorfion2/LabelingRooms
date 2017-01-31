@@ -12,7 +12,7 @@
         <div ng-class="messageForm.rooms.$valid ?  'form-group': 'form-group has-error has-feedback'">
             <label class="control-label col-sm-3" for="rooms">Pokój:</label>
             <div class="col-sm-5">
-                <input ng-pattern="roomRegex" name="rooms" ng-model="message.roomNumber" class="form-control"
+                <input ng-maxlength="10" ng-minlength="1" name="rooms" ng-model="message.roomNumber" class="form-control"
                        id="rooms" type="text" placeholder="np. 903"
                        required>
             </div>

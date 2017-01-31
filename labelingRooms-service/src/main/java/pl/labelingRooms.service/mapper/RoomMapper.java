@@ -27,7 +27,7 @@ public class RoomMapper extends AbstractMapper<Room, RoomDto> {
 
     @Override
     public Room convertToDBO(RoomDto roomDto) {
-        Room room = roomRepository.findOne(roomDto.getNumber());
+        Room room = roomRepository.findOneByNumber(roomDto.getNumber());
         if (room == null)
             room = new Room();
         room.setNumber(roomDto.getNumber());

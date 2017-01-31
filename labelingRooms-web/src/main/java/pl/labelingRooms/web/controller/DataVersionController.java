@@ -18,6 +18,6 @@ public class DataVersionController {
 
     @RequestMapping("/version")
     public DataWrapper<Long> getDataVersionId() {
-        return new DataWrapper<>(null, dataVersionService.getDataVersionId());
+        return new DataWrapper<Long>(null, dataVersionService.getDataVersionId());
     }
 }

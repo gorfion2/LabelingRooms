@@ -6,7 +6,7 @@ import java.util.List;
  * Created by Kamil on 2016-11-12.
  */
 public class RoomDto {
-    private Long number;
+    private String number;
     private String labColor;
     private String labelColor;
     private String borderColor;
@@ -18,11 +18,11 @@ public class RoomDto {
     private Integer eventFontSize;
     private Integer messageFontSize;
 
-    public Long getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(Long number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 

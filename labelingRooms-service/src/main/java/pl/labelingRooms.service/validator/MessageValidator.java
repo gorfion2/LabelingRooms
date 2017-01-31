@@ -24,7 +24,7 @@ public class MessageValidator extends AbstractValidator<MessageDto> {
         validateNotNull(messageDto);
         validateAllFieldNotNull(messageDto, "teacherName", "date");
         validateTextLength(messageDto.getMessageText(), 128, 1);
-        if (roomRepository.findOne(messageDto.getRoomNumber()) == null) {
+        if (roomRepository.findOneByNumber(messageDto.getRoomNumber()) == null) {
             throw new InvalidDataException("Pokój o podanym numerze nie istnieje");
         }
         teacherService.getLoggedTeacher();
