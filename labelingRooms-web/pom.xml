@@ -12,7 +12,7 @@
 
     <artifactId>labelingRooms-web</artifactId>
 
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <properties>
         <start-class>pl.labelingRooms.web.Application</start-class>
